@@ -1,0 +1,75 @@
+{
+  "architecture": "audio_ensemble_v1",
+  "schema_version": 4,
+  "input_dim": 4287,
+  "num_classes": 6,
+  "class_names": [
+    "neutral",
+    "happy",
+    "sad",
+    "angry",
+    "fear",
+    "surprise"
+  ],
+  "branches": [
+    {
+      "config": "branch_0/model_config.json",
+      "weight": 0.5
+    },
+    {
+      "config": "branch_1/model_config.json",
+      "weight": 0.5
+    }
+  ],
+  "feature_spec": {
+    "name": "mean_std_acoustic_v1",
+    "embedding_dim": 1024,
+    "acoustic_dim": 191,
+    "input_dim": 4287,
+    "sample_rate": 16000,
+    "egemaps": true,
+    "egemaps_version": "eGeMAPSv02",
+    "intermediate_layer": 5,
+    "intermediate_dim": 2048
+  },
+  "training_datasets": [
+    "CASIA",
+    "CSEMOTIONS",
+    "RAVDESS",
+    "CREMA-D"
+  ],
+  "display_name": "emotion2vec+ \u00b7 frozen & fine-tuned probability fusion",
+  "temperature": 1.0,
+  "validation": {
+    "CASIA": {
+      "samples": 180,
+      "accuracy": 0.7833333333333333,
+      "macro_f1": 0.7758729836008375,
+      "nll": 0.5528616984849073
+    },
+    "CSEMOTIONS": {
+      "samples": 776,
+      "accuracy": 0.845360824742268,
+      "macro_f1": 0.8253355441147238,
+      "nll": 0.46198546144347674
+    },
+    "RAVDESS": {
+      "samples": 176,
+      "accuracy": 0.7613636363636364,
+      "macro_f1": 0.7542003356177996,
+      "nll": 0.6788272843284403
+    },
+    "CREMA-D": {
+      "samples": 597,
+      "accuracy": 0.8827470686767169,
+      "macro_f1": 0.7358709513961312,
+      "nll": 0.39176872587867484
+    }
+  },
+  "training_manifest_sha256": "107066863ffbb23667c9513de57ed58cc4425889c2e6dd54f0a2def4d1990d11",
+  "training_data_version": "v4",
+  "license_note": "CSEMOTIONS card Apache-2.0; its NOTICE includes ESD research-only terms. RAVDESS CC-BY-NC-SA-4.0. Data and trained weights treated as research/noncommercial artifacts. CREMA-D ODbL-1.0/DbCL-1.0; audio-only human votes, attribution required. openSMILE features: research/educational/private use; separate license required for commercial product use.",
+  "backbone_sha256": "be501a01f26fcdc7663a062dff86af839afbaef7c4de32f5e42d7e1ad2784da4",
+  "release_id": "ser-v4",
+  "selection_manifest_sha256": "107066863ffbb23667c9513de57ed58cc4425889c2e6dd54f0a2def4d1990d11"
+}

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f7f5">
+  <meta name="description" content="声绪：中文语音情绪分析工作台。录制或上传音频，探索六种情绪倾向与分段变化。">
+  <title>声绪 · 语音情绪分析工作台</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+<svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+  <symbol id="i-wave" viewBox="0 0 24 24"><path d="M4 10v4m4-8v12m4-15v18m4-15v12m4-8v4"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-11v1"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 16v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H5v20h14V7Zm0 0v5h5M8 13h8m-8 4h5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6Z"/><path d="m8 12 3 3 5-6"/></symbol>
+</defs></svg>
+<aside class="sidebar">
+  <a href="/" class="brand" aria-label="声绪首页"><span class="brand-icon"><svg><use href="#i-wave"/></svg></span><span>声绪<small>VOICE & EMOTION</small></span></a>
+  <div class="nav-label">工作空间</div>
+  <nav aria-label="主导航">
+    <button class="nav-item active" data-view="workspace"><svg><use href="#i-grid"/></svg>情绪分析<span class="nav-dot"></span></button>
+    <button class="nav-item" data-view="history"><svg><use href="#i-clock"/></svg>会话记录<span id="historyCount" class="count">0</span></button>
+    <button class="nav-item" data-view="about"><svg><use href="#i-info"/></svg>模型与说明</button>
+  </nav>
+  <div class="sidebar-bottom"><div class="local-badge"><span class="tiny-dot"></span>本地分析 · 音频即时清理</div><p>听见声音，也理解情绪。<br>为每一次表达，多一分理解。</p><div class="version">声绪工作台 <span>v3.0</span></div></div>
+</aside>
+<div class="app-shell">
+  <header class="topbar"><div class="breadcrumb">工作空间 <span>/</span> <strong id="pageTitle">情绪分析</strong></div><div id="serviceStatus" class="service-status" role="status"><span class="tiny-dot"></span><span id="statusText">正在连接服务</span></div></header>
+  <main>
+    <section id="workspaceView" class="view">
+      <div class="page-heading"><div><div class="eyebrow"><span></span> SPEECH EMOTION STUDIO</div><h1>让声音里的情绪，<em>被看见。</em></h1><p>从一段声音出发，探索语气背后的情绪倾向。</p></div><div class="heading-note"><svg><use href="#i-wave"/></svg><span>中文语音<br><strong>6 类情绪分析</strong></span></div></div>
+      <div id="serviceNotice" class="notice" hidden></div>
+      <div class="studio-grid">
+        <section class="card input-card" aria-labelledby="inputHeading">
+          <div class="card-heading"><h2 id="inputHeading"><span class="step">01</span>添加你的声音</h2><span class="subtle">最长 60 秒</span></div>
+          <div class="tabs" role="tablist" aria-label="音频输入方式"><button id="uploadTab" class="tab active" role="tab" aria-selected="true" aria-controls="uploadPanel"><svg><use href="#i-upload"/></svg>上传音频</button><button id="recordTab" class="tab" role="tab" aria-selected="false" aria-controls="recordPanel"><svg><use href="#i-mic"/></svg>麦克风录音</button></div>
+          <div id="uploadPanel" role="tabpanel" aria-labelledby="uploadTab"><button id="dropZone" class="drop-zone"><span class="upload-icon"><svg><use href="#i-upload"/></svg></span><strong>点击上传，或将音频拖到这里</strong><span>WAV / MP3 / FLAC / OGG · 最大 15 MB</span><span class="file-picker-label">选择音频文件 <svg><use href="#i-arrow"/></svg></span></button><input id="audioFile" type="file" accept=".wav,.mp3,.flac,.ogg" hidden></div>
+          <div id="recordPanel" role="tabpanel" aria-labelledby="recordTab" hidden><div class="record-zone"><button id="recordBtn" class="record-button" aria-label="开始录音"><svg><use href="#i-mic"/></svg></button><strong id="recordLabel">点击麦克风，开始表达</strong><span id="recordTimer">00:00 / 01:00</span><p>建议在安静环境下，录制 3–10 秒自然语音</p></div></div>
+          <div id="audioPreview" class="audio-preview" hidden><div class="file-row"><span class="file-icon"><svg><use href="#i-file"/></svg></span><div><strong id="fileName"></strong><span id="fileMeta"></span></div><button id="removeFile" class="icon-button" aria-label="移除音频">×</button></div><canvas id="waveform" height="70" aria-label="音频波形"></canvas><audio id="audioPlayer" controls preload="metadata"></audio></div>
+          <div class="input-bottom"><p><svg><use href="#i-shield"/></svg>音频仅用于本次分析，处理后自动删除</p><button id="analyzeBtn" class="primary-button" disabled><svg><use href="#i-wave"/></svg><span id="analyzeText">开始分析</span><svg class="end-icon"><use href="#i-arrow"/></svg></button></div>
+          <div class="examples"><span>先听听示例</span><div id="sampleButtons"><span class="subtle">正在加载…</span></div><small>示例来自 CASIA 测试集，标签不等于模型预测。</small></div>
+        </section>
+        <section class="card result-card" aria-labelledby="resultHeading" aria-busy="false">
+          <div class="card-heading"><h2 id="resultHeading"><span class="step">02</span>情绪解读</h2><button id="exportBtn" class="text-button" disabled><svg><use href="#i-download"/></svg>导出</button></div>
+          <div id="emptyResult" class="empty-result"><div class="emotion-orbit"><div class="orbit-ring r1"></div><div class="orbit-ring r2"></div><span class="orbit-point p1"></span><span class="orbit-point p2"></span><span class="orbit-point p3"></span><div class="orbit-center"><svg><use href="#i-wave"/></svg></div></div><h3>每一种声音，都有情绪的形状</h3><p>添加一段音频，点击「开始分析」<br>在这里查看情绪倾向与概率分布</p><div class="emotion-chips"><span>平静</span><span>愉悦</span><span>悲伤</span><span>愤怒</span><span>恐惧</span><span>惊讶</span></div></div>
+          <div id="loadingResult" class="loading-result" hidden role="status"><div class="loading-wave"><i></i><i></i><i></i><i></i><i></i></div><h3>正在聆听声音里的情绪</h3><p>处理音频、提取特征并分析情绪倾向…</p><span>处理时间随音频长度和设备性能变化</span></div>
+          <div id="resultContent" hidden><p id="resultSource" class="result-source"></p><div class="emotion-summary"><div><span id="resultQualifier" class="result-qualifier">主要情绪倾向</span><h3 id="mainEmotion"></h3><p id="resultInterpretation"></p></div><div class="confidence-ring" id="confidenceRing"><strong id="confidenceValue"></strong><span>模型置信度</span></div></div><div id="uncertainNote" class="uncertain-note" hidden>情绪倾向不明确，建议结合语境判断或重新录制。</div><div class="distribution-heading"><h3>情绪概率分布</h3><span>共 6 类</span></div><div id="probabilities" class="probabilities"></div><p class="probability-note">置信度反映模型的判断倾向，不等同于识别准确率。</p><div class="result-footer"><span id="durationMetric"></span><span id="timeMetric"></span></div></div>
+        </section>
+      </div>
+      <section id="detailSection" class="details-grid" hidden><div class="card"><div class="card-heading"><h2><svg><use href="#i-wave"/></svg>分段情绪</h2><span class="subtle">点击片段回听</span></div><div id="timeline" class="timeline"></div></div><div class="card quality-card"><div class="card-heading"><h2><svg><use href="#i-mic"/></svg>音频质量</h2><span id="qualityBadge" class="quality-badge"></span></div><div id="qualityMetrics" class="quality-metrics"></div><div id="qualityWarnings"></div><p class="subtle">质量检查关注音量、静音与失真，不判断内容真实性。</p></div></section>
+      <section class="guide-grid"><article><span class="guide-number">01 /</span><h3>清晰的声音，更好的分析</h3><p>靠近麦克风自然表达，减少背景音乐、噪声及多人同时讲话。</p></article><article><span class="guide-number">02 /</span><h3>看见情绪的多种可能</h3><p>情绪往往混合存在。结合概率分布和分段结果，理解声音中的变化。</p></article><article><span class="guide-number">03 /</span><h3>让结果回到真实语境</h3><p>识别基于声音特征，不分析语义。结果供交流参考，不能替代人的判断。</p></article></section>
+    </section>
+    <section id="historyView" class="view" hidden><div class="page-heading"><div><div class="eyebrow">SESSION HISTORY</div><h1>每一次表达，都有迹可循。</h1><p>最近 10 次分析，仅保存在当前页面会话；刷新后清空。</p></div><button id="clearHistory" class="secondary-button">清空记录</button></div><div id="historyList" class="history-list"></div></section>
+    <section id="aboutView" class="view" hidden><div class="page-heading"><div><div class="eyebrow">ABOUT THE MODEL</div><h1>理解模型，也理解它的边界。</h1><p>透明呈现数据、评估与使用方式。</p></div></div><div class="card about-card"><h2>中文六分类情绪分析</h2><p id="modelDescription">使用 emotion2vec+ large 提取语音特征，再由经过标准化训练与概率校准的分类器，识别中性、高兴、悲伤、愤怒、恐惧、惊讶六种声音情绪倾向。长音频按片段分析，整体结果按有效音频时长汇总。</p><div id="modelFacts" class="model-facts"></div><h3>如何理解测试数据</h3><div id="externalEvaluations" class="evaluation-scroll"></div><p id="evaluationNote">正在读取评估信息…</p><p><span id="dataScopeNote">原有数据为 4 名说话人录制的 1,200 条语音。</span>真实录音、新说话人、口音、噪声和复杂情绪可能降低准确率。网页显示的模型置信度不是实际正确率，低置信度结果会明确标注。</p><h3>音频与隐私</h3><p>音频发送至你当前运行的服务，用于本次模型推理。服务处理结束后删除上传临时文件；会话记录保存在当前页面内存中，导出由你主动触发。模型推理不需要向外部识别 API 发送音频。</p><h3>获得更好的结果</h3><p>建议上传 3–10 秒、单人清晰中文语音，保留自然语气。最长 60 秒，单文件不超过 15 MB。麦克风录音需要使用 localhost 或 HTTPS，并允许浏览器访问麦克风。</p><a class="docs-link" href="/docs" target="_blank" rel="noopener">查看 API 文档 ↗</a></div></section>
+    <footer class="page-footer"><span>声绪 <span class="footer-divider">/</span> 把表达听得更清楚</span><span>声音有温度，判断有边界。</span></footer>
+  </main>
+</div>
+<div id="toast" class="toast" role="alert" hidden></div>
+</body>
+</html>

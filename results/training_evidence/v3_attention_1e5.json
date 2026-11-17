@@ -1,0 +1,43 @@
+{
+  "runtime": {
+    "executable": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Scripts\\python.exe",
+    "prefix": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser",
+    "base_prefix": "D:\\Anaconda\\envs\\cvhw",
+    "python": "3.11.14",
+    "isolated_packages": true,
+    "torch": "2.11.0.dev20260103+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 5070 Ti"
+  },
+  "backbone_lr": 1e-05,
+  "attention_pooling": true,
+  "precision": "bf16",
+  "trainable_backbone_parameters": 25192448,
+  "frozen_block_unchanged": true,
+  "tail_max_parameter_change": 0.002830207347869873,
+  "initial_validation": {
+    "CASIA": {
+      "samples": 180,
+      "accuracy": 0.8277777777777777,
+      "macro_f1": 0.8245231303929291,
+      "nll": 0.5478874793665045
+    },
+    "CSEMOTIONS": {
+      "samples": 776,
+      "accuracy": 0.779639175257732,
+      "macro_f1": 0.7533795816176809,
+      "nll": 0.5792984191097378
+    },
+    "RAVDESS": {
+      "samples": 176,
+      "accuracy": 0.6875,
+      "macro_f1": 0.6765661912860956,
+      "nll": 0.9882109443389225
+    }
+  },
+  "best_validation_score": 0.7925904319684037,
+  "test_used_for_selection": false,
+  "model_signature": "d23f0429d829767d994472d9aa28834bb0cf6a90a157822332c373575fefb33a",
+  "selected_checkpoint_tail_max_parameter_change": 0.0023602619767189026
+}

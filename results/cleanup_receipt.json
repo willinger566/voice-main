@@ -1,0 +1,577 @@
+{
+  "status": "complete",
+  "root": "D:\\s3\\s4\\voice\\voice-main",
+  "backup_root": "D:\\s3\\s4\\voice\\original-assets",
+  "deleted_bytes": 22960670872,
+  "moved_bytes": 293046004,
+  "deleted": [
+    {
+      "relative": ".venv",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\.venv",
+      "bytes": 330406283,
+      "directory": true
+    },
+    {
+      "relative": ".pytest_cache",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\.pytest_cache",
+      "bytes": 3495,
+      "directory": true
+    },
+    {
+      "relative": "__pycache__",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\__pycache__",
+      "bytes": 2109,
+      "directory": true
+    },
+    {
+      "relative": "src\\__pycache__",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\src\\__pycache__",
+      "bytes": 213877,
+      "directory": true
+    },
+    {
+      "relative": "scripts\\__pycache__",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\__pycache__",
+      "bytes": 177005,
+      "directory": true
+    },
+    {
+      "relative": "tests\\__pycache__",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\tests\\__pycache__",
+      "bytes": 148751,
+      "directory": true
+    },
+    {
+      "relative": "api\\__pycache__",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\api\\__pycache__",
+      "bytes": 24484,
+      "directory": true
+    },
+    {
+      "relative": "data\\external",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\data\\external",
+      "bytes": 4486634468,
+      "directory": true
+    },
+    {
+      "relative": "data\\training_v3",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\data\\training_v3",
+      "bytes": 7527288090,
+      "directory": true
+    },
+    {
+      "relative": "data\\training_v4",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\data\\training_v4",
+      "bytes": 8086948999,
+      "directory": true
+    },
+    {
+      "relative": "data\\base_probe",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\data\\base_probe",
+      "bytes": 79849700,
+      "directory": true
+    },
+    {
+      "relative": "data\\samples\\liuchanhg_neutral_207.wav",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\data\\samples\\liuchanhg_neutral_207.wav",
+      "bytes": 41004,
+      "directory": false
+    },
+    {
+      "relative": "models\\cache",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\cache",
+      "bytes": 0,
+      "directory": true
+    },
+    {
+      "relative": "models\\base_probe",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\base_probe",
+      "bytes": 1125613536,
+      "directory": true
+    },
+    {
+      "relative": "models\\native_head.pth",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\native_head.pth",
+      "bytes": 38725,
+      "directory": false
+    },
+    {
+      "relative": "models\\speaker_independent",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\speaker_independent",
+      "bytes": 596208,
+      "directory": true
+    },
+    {
+      "relative": "models\\upgraded",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\upgraded",
+      "bytes": 1170245,
+      "directory": true
+    },
+    {
+      "relative": "models\\v3_attention_1e5",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v3_attention_1e5",
+      "bytes": 106239413,
+      "directory": true
+    },
+    {
+      "relative": "models\\v3_attention_3e5",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v3_attention_3e5",
+      "bytes": 106235993,
+      "directory": true
+    },
+    {
+      "relative": "models\\v3_attention_chinese",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v3_attention_chinese",
+      "bytes": 103706517,
+      "directory": true
+    },
+    {
+      "relative": "models\\v3_boosted",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v3_boosted",
+      "bytes": 3849420,
+      "directory": true
+    },
+    {
+      "relative": "models\\v3_candidates",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v3_candidates",
+      "bytes": 109564304,
+      "directory": true
+    },
+    {
+      "relative": "models\\v3_egemaps_boosted",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v3_egemaps_boosted",
+      "bytes": 3093493,
+      "directory": true
+    },
+    {
+      "relative": "models\\v3_finetuned",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v3_finetuned",
+      "bytes": 105707014,
+      "directory": true
+    },
+    {
+      "relative": "models\\v3_frozen",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v3_frozen",
+      "bytes": 4885213,
+      "directory": true
+    },
+    {
+      "relative": "models\\v3_intermediate",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v3_intermediate",
+      "bytes": 2987419,
+      "directory": true
+    },
+    {
+      "relative": "models\\v3_release",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v3_release",
+      "bytes": 2953017,
+      "directory": true
+    },
+    {
+      "relative": "models\\v4_finetuned_1e4",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v4_finetuned_1e4",
+      "bytes": 204576005,
+      "directory": true
+    },
+    {
+      "relative": "models\\v4_finetuned_2e5",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v4_finetuned_2e5",
+      "bytes": 204565727,
+      "directory": true
+    },
+    {
+      "relative": "models\\v4_frozen",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v4_frozen",
+      "bytes": 5849670,
+      "directory": true
+    },
+    {
+      "relative": "models\\v4_release",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v4_release",
+      "bytes": 210310749,
+      "directory": true
+    },
+    {
+      "relative": "models\\v5_candidates",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\models\\v5_candidates",
+      "bytes": 140669092,
+      "directory": true
+    },
+    {
+      "relative": "src\\data_preprocessing.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\src\\data_preprocessing.py",
+      "bytes": 5733,
+      "directory": false
+    },
+    {
+      "relative": "src\\evaluate.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\src\\evaluate.py",
+      "bytes": 2840,
+      "directory": false
+    },
+    {
+      "relative": "src\\export.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\src\\export.py",
+      "bytes": 1748,
+      "directory": false
+    },
+    {
+      "relative": "src\\feature_extraction.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\src\\feature_extraction.py",
+      "bytes": 3557,
+      "directory": false
+    },
+    {
+      "relative": "src\\finetune_backbone.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\src\\finetune_backbone.py",
+      "bytes": 16482,
+      "directory": false
+    },
+    {
+      "relative": "src\\train.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\src\\train.py",
+      "bytes": 10850,
+      "directory": false
+    },
+    {
+      "relative": "src\\train_boosted.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\src\\train_boosted.py",
+      "bytes": 5459,
+      "directory": false
+    },
+    {
+      "relative": "src\\train_fusion.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\src\\train_fusion.py",
+      "bytes": 13788,
+      "directory": false
+    },
+    {
+      "relative": "src\\train_upgrade.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\src\\train_upgrade.py",
+      "bytes": 10059,
+      "directory": false
+    },
+    {
+      "relative": "src\\training_runtime.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\src\\training_runtime.py",
+      "bytes": 2072,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\analyze_release_errors.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\analyze_release_errors.py",
+      "bytes": 4271,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\audit_dataset.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\audit_dataset.py",
+      "bytes": 2189,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\benchmark_audio.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\benchmark_audio.py",
+      "bytes": 2717,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\check_finetune_forward.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\check_finetune_forward.py",
+      "bytes": 1653,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\check_prefix_forward.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\check_prefix_forward.py",
+      "bytes": 2295,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\deploy_local_release.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\deploy_local_release.py",
+      "bytes": 2974,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\download_training_data.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\download_training_data.py",
+      "bytes": 7292,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\evaluate_release.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\evaluate_release.py",
+      "bytes": 9037,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\extract_crema_features.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\extract_crema_features.py",
+      "bytes": 3584,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\extract_egemaps.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\extract_egemaps.py",
+      "bytes": 2813,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\extract_intermediate_features.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\extract_intermediate_features.py",
+      "bytes": 2875,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\extract_prefix_cache.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\extract_prefix_cache.py",
+      "bytes": 4671,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\extract_rich_features.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\extract_rich_features.py",
+      "bytes": 5406,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\prepare_crema.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\prepare_crema.py",
+      "bytes": 5663,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\prepare_multicorpus.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\prepare_multicorpus.py",
+      "bytes": 8118,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\run_attention_experiments.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\run_attention_experiments.py",
+      "bytes": 1309,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\run_v4_experiments.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\run_v4_experiments.py",
+      "bytes": 1573,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\select_release.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\select_release.py",
+      "bytes": 4757,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\select_v4_release.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\select_v4_release.py",
+      "bytes": 6256,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\train_pair_refiner.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\train_pair_refiner.py",
+      "bytes": 5021,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\write_accuracy_report.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\write_accuracy_report.py",
+      "bytes": 12230,
+      "directory": false
+    },
+    {
+      "relative": "scripts\\probe_base_transfer.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\scripts\\probe_base_transfer.py",
+      "bytes": 6009,
+      "directory": false
+    },
+    {
+      "relative": "tests\\test_pipeline.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\tests\\test_pipeline.py",
+      "bytes": 6302,
+      "directory": false
+    },
+    {
+      "relative": "tests\\test_rich_training.py",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\tests\\test_rich_training.py",
+      "bytes": 5628,
+      "directory": false
+    },
+    {
+      "relative": "requirements-training.txt",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\requirements-training.txt",
+      "bytes": 450,
+      "directory": false
+    },
+    {
+      "relative": "ACCURACY_V3_PLAN.md",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\ACCURACY_V3_PLAN.md",
+      "bytes": 4500,
+      "directory": false
+    },
+    {
+      "relative": "ACCURACY_V4_PLAN.md",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\ACCURACY_V4_PLAN.md",
+      "bytes": 2551,
+      "directory": false
+    },
+    {
+      "relative": "ACCURACY_V5_PLAN.md",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\ACCURACY_V5_PLAN.md",
+      "bytes": 1241,
+      "directory": false
+    },
+    {
+      "relative": "BASE_TRANSFER_PLAN.md",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\BASE_TRANSFER_PLAN.md",
+      "bytes": 1718,
+      "directory": false
+    },
+    {
+      "relative": "UPGRADE_PLAN.md",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\UPGRADE_PLAN.md",
+      "bytes": 2371,
+      "directory": false
+    },
+    {
+      "relative": "UPGRADE_REPORT.md",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\UPGRADE_REPORT.md",
+      "bytes": 5217,
+      "directory": false
+    },
+    {
+      "relative": "results\\v3",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\v3",
+      "bytes": 977108,
+      "directory": true
+    },
+    {
+      "relative": "results\\v4",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\v4",
+      "bytes": 712857,
+      "directory": true
+    },
+    {
+      "relative": "results\\v5",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\v5",
+      "bytes": 9386,
+      "directory": true
+    },
+    {
+      "relative": "results\\base_transfer",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\base_transfer",
+      "bytes": 3978621,
+      "directory": true
+    },
+    {
+      "relative": "results\\evaluation",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\evaluation",
+      "bytes": 136508,
+      "directory": true
+    },
+    {
+      "relative": "results\\audio_benchmark.json",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\audio_benchmark.json",
+      "bytes": 40009,
+      "directory": false
+    },
+    {
+      "relative": "results\\backbone_val_logits.npy",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\backbone_val_logits.npy",
+      "bytes": 4448,
+      "directory": false
+    },
+    {
+      "relative": "results\\browser_export.json",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\browser_export.json",
+      "bytes": 5202,
+      "directory": false
+    },
+    {
+      "relative": "results\\current_evaluation.json",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\current_evaluation.json",
+      "bytes": 38841,
+      "directory": false
+    },
+    {
+      "relative": "results\\current_evaluation.png",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\current_evaluation.png",
+      "bytes": 67508,
+      "directory": false
+    },
+    {
+      "relative": "results\\dataset_audit.json",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\dataset_audit.json",
+      "bytes": 1971,
+      "directory": false
+    },
+    {
+      "relative": "results\\pair-refiner.log",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\pair-refiner.log",
+      "bytes": 5163,
+      "directory": false
+    },
+    {
+      "relative": "results\\real_audio_smoke.json",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\real_audio_smoke.json",
+      "bytes": 4806,
+      "directory": false
+    },
+    {
+      "relative": "results\\speaker_independent_report.json",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\speaker_independent_report.json",
+      "bytes": 14050,
+      "directory": false
+    },
+    {
+      "relative": "results\\upgrade_report.json",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\upgrade_report.json",
+      "bytes": 18390,
+      "directory": false
+    },
+    {
+      "relative": "results\\v4_evaluation.log",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\v4_evaluation.log",
+      "bytes": 83535,
+      "directory": false
+    },
+    {
+      "relative": "results\\v4_selection.log",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\v4_selection.log",
+      "bytes": 12950,
+      "directory": false
+    },
+    {
+      "relative": "results\\base-transfer.log",
+      "absolute": "D:\\s3\\s4\\voice\\voice-main\\results\\base-transfer.log",
+      "bytes": 4215,
+      "directory": false
+    }
+  ],
+  "moved": [
+    {
+      "source": "D:\\s3\\s4\\voice\\voice-main\\data\\CASIA",
+      "destination": "D:\\s3\\s4\\voice\\original-assets\\data\\CASIA",
+      "bytes": 151496339
+    },
+    {
+      "source": "D:\\s3\\s4\\voice\\voice-main\\data\\features",
+      "destination": "D:\\s3\\s4\\voice\\original-assets\\data\\features",
+      "bytes": 10054646
+    },
+    {
+      "source": "D:\\s3\\s4\\voice\\voice-main\\data\\processed",
+      "destination": "D:\\s3\\s4\\voice\\original-assets\\data\\processed",
+      "bytes": 130268339
+    },
+    {
+      "source": "D:\\s3\\s4\\voice\\voice-main\\models\\finetuned",
+      "destination": "D:\\s3\\s4\\voice\\original-assets\\models\\finetuned",
+      "bytes": 1226680
+    }
+  ]
+}

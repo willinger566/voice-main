@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "samples": 9,
+  "max_probability_difference": 0.0,
+  "model_signature": "64ab1f51ee3ba524a0d189a58485f165b188a53e546682a2a45af38a607af74f",
+  "evaluations_present": [
+    "CASIA",
+    "CREMA-D",
+    "CSEMOTIONS",
+    "RAVDESS"
+  ],
+  "training_samples": 6498
+}

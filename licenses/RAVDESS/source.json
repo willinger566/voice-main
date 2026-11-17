@@ -1,0 +1,15 @@
+{
+  "source": "https://zenodo.org/records/1188976",
+  "license": {
+    "id": "cc-by-nc-sa-4.0"
+  },
+  "file": {
+    "id": "090dc93f-5f0d-4a61-bb6c-a4583e5f212f",
+    "key": "Audio_Speech_Actors_01-24.zip",
+    "size": 208468073,
+    "checksum": "md5:bc696df654c87fed845eb13823edef8a",
+    "links": {
+      "self": "https://zenodo.org/api/records/1188976/files/Audio_Speech_Actors_01-24.zip/content"
+    }
+  }
+}

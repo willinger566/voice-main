@@ -1,0 +1,579 @@
+{
+  "base_transfer": {
+    "runtime": {
+      "executable": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Scripts\\python.exe",
+      "prefix": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser",
+      "base_prefix": "D:\\Anaconda\\envs\\cvhw",
+      "python": "3.11.14",
+      "isolated_packages": true,
+      "torch": "2.11.0.dev20260103+cu128",
+      "cuda_runtime": "12.8",
+      "cuda_available": true,
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "package_paths": {
+        "torch": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\torch\\__init__.py",
+        "numpy": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\numpy\\__init__.py",
+        "sklearn": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\sklearn\\__init__.py"
+      }
+    },
+    "model_source": {
+      "repo": "emotion2vec/emotion2vec_base",
+      "revision": "0c9a3152734f9d7a7a05b4ee6bfb3c109d288664",
+      "sha256": "4f14ddf7ba394bcafdd4bff6ae0f24ab2e4134260d4dd42c58ea791a201b02dd"
+    },
+    "baseline_score": 0.784544283736229,
+    "baseline_validation": {
+      "CASIA": {
+        "samples": 180,
+        "accuracy": 0.7833333333333333,
+        "macro_f1": 0.7758729836008375,
+        "nll": 0.5528616940466257
+      },
+      "CSEMOTIONS": {
+        "samples": 776,
+        "accuracy": 0.845360824742268,
+        "macro_f1": 0.8253355441147238,
+        "nll": 0.461985461761322
+      },
+      "RAVDESS": {
+        "samples": 176,
+        "accuracy": 0.7613636363636364,
+        "macro_f1": 0.7542003356177996,
+        "nll": 0.6788272853926679
+      },
+      "CREMA-D": {
+        "samples": 597,
+        "accuracy": 0.8827470686767169,
+        "macro_f1": 0.7358709513961312,
+        "nll": 0.39176872783703953
+      }
+    },
+    "candidates": [
+      {
+        "seed": 17,
+        "base_weight": 1.0,
+        "temperature": 1.7025025538807785,
+        "score": 0.6149951834107333,
+        "gain": -0.16954910032549564,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.4722222222222222,
+            "macro_f1": 0.45203405038144523,
+            "nll": 1.412528569663831
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.8414948453608248,
+            "macro_f1": 0.8439113686440266,
+            "nll": 0.5388885017582364
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.6988636363636364,
+            "macro_f1": 0.7070485719999855,
+            "nll": 0.8453743087952802
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.8358458961474037,
+            "macro_f1": 0.6509989042680424,
+            "nll": 0.5380282642660212
+          }
+        },
+        "epochs": 64
+      },
+      {
+        "seed": 17,
+        "base_weight": 0.5,
+        "temperature": 1.7025025538807785,
+        "score": 0.8016502471333125,
+        "gain": 0.01710596339708348,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.7611111111111111,
+            "macro_f1": 0.7544420753375977,
+            "nll": 0.789769692888611
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.9007731958762887,
+            "macro_f1": 0.891697068236264,
+            "nll": 0.422748822510332
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.7897727272727273,
+            "macro_f1": 0.7886064630898867,
+            "nll": 0.6596131681706917
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.9061976549413735,
+            "macro_f1": 0.7805944268464575,
+            "nll": 0.42299167616440103
+          }
+        },
+        "epochs": 64
+      },
+      {
+        "seed": 42,
+        "base_weight": 1.0,
+        "temperature": 1.7119133014066985,
+        "score": 0.6329969924261858,
+        "gain": -0.1515472913100432,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.5055555555555555,
+            "macro_f1": 0.4913224753388688,
+            "nll": 1.4330327841390584
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.8440721649484536,
+            "macro_f1": 0.8384176729090081,
+            "nll": 0.5583521817103019
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.7045454545454546,
+            "macro_f1": 0.7090595142782331,
+            "nll": 0.8208361784969341
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.8324958123953099,
+            "macro_f1": 0.6490450145622558,
+            "nll": 0.5443622523804059
+          }
+        },
+        "epochs": 57
+      },
+      {
+        "seed": 42,
+        "base_weight": 0.5,
+        "temperature": 1.7119133014066985,
+        "score": 0.8084133717879819,
+        "gain": 0.023869088051752918,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.7666666666666667,
+            "macro_f1": 0.7623704660132304,
+            "nll": 0.8000513373158931
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.9020618556701031,
+            "macro_f1": 0.8932774240584106,
+            "nll": 0.42523966753995707
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.8068181818181818,
+            "macro_f1": 0.8074251607321138,
+            "nll": 0.6435862259357438
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.9128978224455612,
+            "macro_f1": 0.7850239549063222,
+            "nll": 0.4244188129791239
+          }
+        },
+        "epochs": 57
+      },
+      {
+        "seed": 17,
+        "base_weight": 0.25,
+        "temperature": 1.7025025538807785,
+        "score": 0.7945177917117823,
+        "gain": 0.009973507975553297,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.7777777777777778,
+            "macro_f1": 0.7711234004028505,
+            "nll": 0.648699780462058
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.8737113402061856,
+            "macro_f1": 0.859690601486849,
+            "nll": 0.4143874802055153
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.7613636363636364,
+            "macro_f1": 0.759497940853873,
+            "nll": 0.6345864649955887
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.8911222780569514,
+            "macro_f1": 0.7509911697891497,
+            "nll": 0.396692294308557
+          }
+        },
+        "epochs": 64
+      },
+      {
+        "seed": 42,
+        "base_weight": 0.25,
+        "temperature": 1.7119133014066985,
+        "score": 0.7956333206410746,
+        "gain": 0.01108903690484564,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.7777777777777778,
+            "macro_f1": 0.7703262258864135,
+            "nll": 0.6542245097714153
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.875,
+            "macro_f1": 0.8617192010699811,
+            "nll": 0.4158835906131411
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.7784090909090909,
+            "macro_f1": 0.7751454522657529,
+            "nll": 0.6262859136527652
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.8894472361809045,
+            "macro_f1": 0.7443990215029819,
+            "nll": 0.3971918916352193
+          }
+        },
+        "epochs": 57
+      }
+    ],
+    "eligible": [],
+    "selected": null,
+    "test_used_for_selection": false,
+    "feature_rows": 11559
+  },
+  "pair_refiner": {
+    "runtime": {
+      "executable": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Scripts\\python.exe",
+      "prefix": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser",
+      "base_prefix": "D:\\Anaconda\\envs\\cvhw",
+      "python": "3.11.14",
+      "isolated_packages": true,
+      "torch": "2.11.0.dev20260103+cu128",
+      "cuda_runtime": "12.8",
+      "cuda_available": true,
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "package_paths": {
+        "torch": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\torch\\__init__.py",
+        "numpy": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\numpy\\__init__.py",
+        "sklearn": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\sklearn\\__init__.py"
+      }
+    },
+    "training_device": "CPU",
+    "source_model_signature": "64ab1f51ee3ba524a0d189a58485f165b188a53e546682a2a45af38a607af74f",
+    "baseline_score": 0.784544283736229,
+    "baseline_validation": {
+      "CASIA": {
+        "samples": 180,
+        "accuracy": 0.7833333333333333,
+        "macro_f1": 0.7758729836008375,
+        "nll": 0.5528616940466257
+      },
+      "CSEMOTIONS": {
+        "samples": 776,
+        "accuracy": 0.845360824742268,
+        "macro_f1": 0.8253355441147238,
+        "nll": 0.4619854618429428
+      },
+      "RAVDESS": {
+        "samples": 176,
+        "accuracy": 0.7613636363636364,
+        "macro_f1": 0.7542003356177996,
+        "nll": 0.6788272853926679
+      },
+      "CREMA-D": {
+        "samples": 597,
+        "accuracy": 0.8827470686767169,
+        "macro_f1": 0.7358709513961312,
+        "nll": 0.39176872783703953
+      }
+    },
+    "candidates": [
+      {
+        "name": "casia_svm_c1",
+        "weight": 0.5,
+        "temperature": 0.7030550485814959,
+        "selection_score": 0.7790793383926891,
+        "gain": -0.0054649453435399176,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.7888888888888889,
+            "macro_f1": 0.7809171736000776,
+            "nll": 0.5240763400405446
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.8260309278350515,
+            "macro_f1": 0.7983116189910083,
+            "nll": 0.48199508530279206
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.7613636363636364,
+            "macro_f1": 0.7595394871169306,
+            "nll": 0.7002778415833384
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.8877721943048577,
+            "macro_f1": 0.7317331718365477,
+            "nll": 0.40548463851464767
+          }
+        }
+      },
+      {
+        "name": "casia_svm_c1",
+        "weight": 1.0,
+        "temperature": 0.7030550485814959,
+        "selection_score": 0.7595773139091407,
+        "gain": -0.024966969827088237,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.8,
+            "macro_f1": 0.7927979657583509,
+            "nll": 0.5163947325502064
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.8054123711340206,
+            "macro_f1": 0.7685629118667303,
+            "nll": 0.5136582487729731
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.6988636363636364,
+            "macro_f1": 0.699812032257205,
+            "nll": 0.7577605436033429
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.8626465661641541,
+            "macro_f1": 0.6262825424422565,
+            "nll": 0.42494141573597694
+          }
+        }
+      },
+      {
+        "name": "casia_svm_c10",
+        "weight": 0.5,
+        "temperature": 1.4149278710829927,
+        "selection_score": 0.7794620237217902,
+        "gain": -0.005082260014438789,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.7777777777777778,
+            "macro_f1": 0.7691082382950386,
+            "nll": 0.5326661828136835
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.8376288659793815,
+            "macro_f1": 0.8150535593166585,
+            "nll": 0.4832900109171525
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.7727272727272727,
+            "macro_f1": 0.7690691138425895,
+            "nll": 0.7018880049186984
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.8877721943048577,
+            "macro_f1": 0.7348492539501443,
+            "nll": 0.40615227478328986
+          }
+        }
+      },
+      {
+        "name": "casia_svm_c10",
+        "weight": 1.0,
+        "temperature": 1.4149278710829927,
+        "selection_score": 0.7389867646350731,
+        "gain": -0.04555751910115591,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.7666666666666667,
+            "macro_f1": 0.7572335664800621,
+            "nll": 0.5396002658604255
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.7899484536082474,
+            "macro_f1": 0.7543687263521767,
+            "nll": 0.5196496289246919
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.7102272727272727,
+            "macro_f1": 0.7128544851547409,
+            "nll": 0.7696616102616864
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.864321608040201,
+            "macro_f1": 0.6277391497391498,
+            "nll": 0.42610939592441804
+          }
+        }
+      },
+      {
+        "name": "chinese_svm_c1",
+        "weight": 0.5,
+        "temperature": 0.6083579011379033,
+        "selection_score": 0.7850060662101699,
+        "gain": 0.0004617824739409082,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.7888888888888889,
+            "macro_f1": 0.7809171736000776,
+            "nll": 0.5293890064700305
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.8389175257731959,
+            "macro_f1": 0.8165492109334274,
+            "nll": 0.46647213813319677
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.7670454545454546,
+            "macro_f1": 0.76409398946448,
+            "nll": 0.6895490483105061
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.8877721943048577,
+            "macro_f1": 0.7317331718365477,
+            "nll": 0.4020237379242772
+          }
+        }
+      },
+      {
+        "name": "chinese_svm_c1",
+        "weight": 1.0,
+        "temperature": 0.6083579011379033,
+        "selection_score": 0.7777567853610019,
+        "gain": -0.0067874983752270746,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.8055555555555556,
+            "macro_f1": 0.7984970729885439,
+            "nll": 0.5229034786760796
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.8221649484536082,
+            "macro_f1": 0.7909445676859671,
+            "nll": 0.4780500394417308
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.7386363636363636,
+            "macro_f1": 0.7396780982583073,
+            "nll": 0.7322160175749133
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.8743718592964824,
+            "macro_f1": 0.6725706873510909,
+            "nll": 0.4155880162410646
+          }
+        }
+      },
+      {
+        "name": "chinese_svm_c10",
+        "weight": 0.5,
+        "temperature": 0.9979639231120899,
+        "selection_score": 0.7808673288507475,
+        "gain": -0.003676954885481476,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.7777777777777778,
+            "macro_f1": 0.7691082382950386,
+            "nll": 0.5377603949359253
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.8427835051546392,
+            "macro_f1": 0.822321993705826,
+            "nll": 0.4711601038192554
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.7670454545454546,
+            "macro_f1": 0.7644329440782561,
+            "nll": 0.6939905953863825
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.8877721943048577,
+            "macro_f1": 0.7317331718365477,
+            "nll": 0.4033817152213461
+          }
+        }
+      },
+      {
+        "name": "chinese_svm_c10",
+        "weight": 1.0,
+        "temperature": 0.9979639231120899,
+        "selection_score": 0.7666431177874709,
+        "gain": -0.017901165948758124,
+        "validation": {
+          "CASIA": {
+            "samples": 180,
+            "accuracy": 0.7722222222222223,
+            "macro_f1": 0.7635739623536127,
+            "nll": 0.5427015688494554
+          },
+          "CSEMOTIONS": {
+            "samples": 776,
+            "accuracy": 0.8311855670103093,
+            "macro_f1": 0.8084940790626041,
+            "nll": 0.49275072338676956
+          },
+          "RAVDESS": {
+            "samples": 176,
+            "accuracy": 0.7386363636363636,
+            "macro_f1": 0.7419072472927302,
+            "nll": 0.7566056888122124
+          },
+          "CREMA-D": {
+            "samples": 597,
+            "accuracy": 0.88107202680067,
+            "macro_f1": 0.6811718816261028,
+            "nll": 0.41858021247867244
+          }
+        }
+      }
+    ],
+    "eligible": [],
+    "selected": null,
+    "test_used_for_selection": false
+  },
+  "base_transfer_plan": "# 最后一组迁移特征对照与清理决策\n\n作者在 https://github.com/ddlBoJack/emotion2vec/issues/39 建议原始 emotion2vec_base 可能更适合迁移特征提取。本轮只据此验证，不视为效果保证。\n\n- 固定官方 emotion2vec/emotion2vec_base revision 0c9a3152734f9d7a7a05b4ee6bfb3c109d288664，权重SHA256记录在下载source.json。\n- 仅提取现有训练/验证片段，均值/标准差加相同191项声学特征，测试不参与选型。\n- 四库平衡采样，原V4验证综合宏F1权重不变。两个MLP候选固定hidden256、dropout.35、seed17/42；每个另比较与当前V4概率各50%的融合。\n- 最多100轮、17轮无改善早停。温度只拟合验证。只有综合宏F1提高≥0.005、CASIA验证严格提升、CSEMOTIONS验证不降低，才进入发布回归；否则保留V4并删除本次下载与缓存，仅留数值报告。\n- 若无候选通过门槛，停止在既有数据上继续搜索；精简为部署版，删除训练缓存、落选权重、重复环境和不再需要的训练代码。原始用户CASIA数据保留备份；保留部署权重、许可、精简评测报告和运行环境。\n\n## 查看原定验证结果后、读取任何新测试前的唯一追加\n\n50%融合在外部中文验证提高约5.7个百分点，但CASIA略降。基于这一验证取舍，固定追加base权重25%，两个既有种子均比较，不再训练新头或搜索更多权重。原有综合收益≥0.005、CASIA验证严格提升、外部中文验证不退化门槛不变。若通过，完整回归仍要求CASIA和外部中文均不低于已部署V4，并报告其他语料退化。所有测试已在既往使用，本轮仅称回归，不称新盲测。\n"
+}

@@ -1,0 +1,104 @@
+{
+  "source": "https://huggingface.co/datasets/ATH-MaaS/CSEMOTIONS",
+  "revision": "19498e62e6745cf9ec9b69a44b826caa467eac31",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "type": "file",
+      "oid": "a71347679164bf6d1a22553d7dab4fab7fc839d5",
+      "size": 400346630,
+      "lfs": {
+        "oid": "caeb0357cf4fc990204ec83d6c0692303fcde2997767a965b86ff4f489c3ce8e",
+        "size": 400346630,
+        "pointerSize": 134
+      },
+      "xetHash": "18c68b71203da78f61113f3c147ab5c13426aa55d55ec99f35c90f04882c4384",
+      "path": "data/train-00000-of-00008.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "a0d57ec0c82f1b0f3600d7e4857049bd5fe64b93",
+      "size": 323382552,
+      "lfs": {
+        "oid": "5910d384a5eb89c9edc1154c6ce7d5ee8041d01c185c33224f7083546cae66e3",
+        "size": 323382552,
+        "pointerSize": 134
+      },
+      "xetHash": "fdaf82a72f6c0f6dd5bd66a3f77a89950d1735264377bc025788c1ee897f6e2f",
+      "path": "data/train-00001-of-00008.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "86da2b4e341a51cec72bdae4ad5f94d4c6b81d59",
+      "size": 334920722,
+      "lfs": {
+        "oid": "d74b15673cfb166f90c6e363d5807087aff2ad1b95dc2c3f740e93cae567cd92",
+        "size": 334920722,
+        "pointerSize": 134
+      },
+      "xetHash": "16604ef8504efe09912edd45d59bb473508dae7cca88d1092cf91a3eb0b55550",
+      "path": "data/train-00002-of-00008.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "317987a63de04edc33ffc55763a718fbe11ff213",
+      "size": 512783324,
+      "lfs": {
+        "oid": "dbfb1a9d449584fd1c05ebd507638c000f426ef902e57b005944450e92a8e751",
+        "size": 512783324,
+        "pointerSize": 134
+      },
+      "xetHash": "5847a0d2013b2704fdfe8367ac6529d97cb5ab3a46366f750ed52bb43afbb473",
+      "path": "data/train-00003-of-00008.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "36f5fd72443f1f7d3738449649fbd0eba000905d",
+      "size": 317245359,
+      "lfs": {
+        "oid": "98305ba9a4a93407331fdd74481a9e400aab465bca289a20dca7f6dd8c5b10c3",
+        "size": 317245359,
+        "pointerSize": 134
+      },
+      "xetHash": "04287383cb7dabe1384d3d7a096d739617a3008cdd560b285f87b2f5b90b2ded",
+      "path": "data/train-00004-of-00008.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "d147b4e2824a41912f6b8ada062ee923d7093bfa",
+      "size": 324664675,
+      "lfs": {
+        "oid": "ee4bdb8c958aaad48ceb48ca7c958200fbab871ac58d0cc8089f3261e9dbed5a",
+        "size": 324664675,
+        "pointerSize": 134
+      },
+      "xetHash": "ecd0869c479524ab7ab5f45272cebeb7371a064e472da1f9a1d5dba8f8bd1c10",
+      "path": "data/train-00005-of-00008.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "a025b99062f2f0611216dfd0a260bd8ca77c89ad",
+      "size": 374869971,
+      "lfs": {
+        "oid": "461c85d5027d93a55f976a2085db47946c8a7926970fb7e8eee0641f8a8a5633",
+        "size": 374869971,
+        "pointerSize": 134
+      },
+      "xetHash": "5a43d0828c6384bf17f392b9c5d43b5071c4c57adb74c3342a6c5db9050c8e77",
+      "path": "data/train-00006-of-00008.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "cb236e8d96c2edf09ffe7e878641193953a3dce4",
+      "size": 489219053,
+      "lfs": {
+        "oid": "3bdaed0f6d633c698fde55c53bef3cc9b4c58ff5d6fed09f53dc2ffeb9644254",
+        "size": 489219053,
+        "pointerSize": 134
+      },
+      "xetHash": "285d560e95557ddbd41d5ca0cd36e590400dd41a38d07084d40a649d0fda300c",
+      "path": "data/train-00007-of-00008.parquet"
+    }
+  ],
+  "use": "six exact emotion labels; playfulness excluded"
+}

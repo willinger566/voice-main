@@ -1,0 +1,55 @@
+{
+  "runtime": {
+    "executable": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Scripts\\python.exe",
+    "prefix": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser",
+    "base_prefix": "D:\\Anaconda\\envs\\cvhw",
+    "python": "3.11.14",
+    "isolated_packages": true,
+    "torch": "2.11.0.dev20260103+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "package_paths": {
+      "torch": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\torch\\__init__.py",
+      "numpy": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\numpy\\__init__.py",
+      "sklearn": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\sklearn\\__init__.py"
+    }
+  },
+  "backbone_lr": 0.0001,
+  "start_block": 4,
+  "attention_pooling": false,
+  "precision": "fp32",
+  "trainable_backbone_parameters": 50384896,
+  "frozen_block_unchanged": true,
+  "tail_max_parameter_change": 0.012442395091056824,
+  "last_epoch_tail_max_parameter_change": 0.012442395091056824,
+  "initial_validation": {
+    "CASIA": {
+      "samples": 180,
+      "accuracy": 0.8277777777777777,
+      "macro_f1": 0.8253116995378192,
+      "nll": 0.49481619884905603
+    },
+    "CSEMOTIONS": {
+      "samples": 776,
+      "accuracy": 0.7783505154639175,
+      "macro_f1": 0.7445185026990228,
+      "nll": 0.6126309231076263
+    },
+    "RAVDESS": {
+      "samples": 176,
+      "accuracy": 0.7556818181818182,
+      "macro_f1": 0.7634275149413847,
+      "nll": 0.7335442624146143
+    },
+    "CREMA-D": {
+      "samples": 597,
+      "accuracy": 0.7638190954773869,
+      "macro_f1": 0.5873113127718562,
+      "nll": 0.6467273435015967
+    }
+  },
+  "best_validation_score": 0.7830391348675898,
+  "test_used_for_selection": false,
+  "model_signature": "bc640882d84eff329fa3187b6ced1d18c7e612666ac03660768eeaa1387bd218"
+}

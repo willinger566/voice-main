@@ -1,0 +1,377 @@
+{
+  "manifest_sha256": "107066863ffbb23667c9513de57ed58cc4425889c2e6dd54f0a2def4d1990d11",
+  "samples": 9843,
+  "corpora": {
+    "CASIA": {
+      "train": {
+        "samples": 840,
+        "speakers": [
+          "CASIA/ZhaoZuoxiang",
+          "CASIA/liuchanhg",
+          "CASIA/wangzhe",
+          "CASIA/zhaoquanyin"
+        ],
+        "label_counts": {
+          "happy": 140,
+          "angry": 140,
+          "sad": 140,
+          "neutral": 140,
+          "surprise": 140,
+          "fear": 140
+        },
+        "hours": 0.345
+      },
+      "val": {
+        "samples": 180,
+        "speakers": [
+          "CASIA/ZhaoZuoxiang",
+          "CASIA/liuchanhg",
+          "CASIA/wangzhe",
+          "CASIA/zhaoquanyin"
+        ],
+        "label_counts": {
+          "fear": 32,
+          "angry": 32,
+          "surprise": 32,
+          "happy": 28,
+          "neutral": 28,
+          "sad": 28
+        },
+        "hours": 0.072
+      },
+      "test": {
+        "samples": 180,
+        "speakers": [
+          "CASIA/ZhaoZuoxiang",
+          "CASIA/liuchanhg",
+          "CASIA/wangzhe",
+          "CASIA/zhaoquanyin"
+        ],
+        "label_counts": {
+          "neutral": 32,
+          "surprise": 28,
+          "fear": 28,
+          "happy": 32,
+          "angry": 28,
+          "sad": 32
+        },
+        "hours": 0.077
+      },
+      "speaker_overlap": {
+        "train_val": [
+          "CASIA/ZhaoZuoxiang",
+          "CASIA/liuchanhg",
+          "CASIA/wangzhe",
+          "CASIA/zhaoquanyin"
+        ],
+        "train_test": [
+          "CASIA/ZhaoZuoxiang",
+          "CASIA/liuchanhg",
+          "CASIA/wangzhe",
+          "CASIA/zhaoquanyin"
+        ],
+        "val_test": [
+          "CASIA/ZhaoZuoxiang",
+          "CASIA/liuchanhg",
+          "CASIA/wangzhe",
+          "CASIA/zhaoquanyin"
+        ]
+      }
+    },
+    "CSEMOTIONS": {
+      "train": {
+        "samples": 2065,
+        "speakers": [
+          "CSEMOTIONS/female001",
+          "CSEMOTIONS/female002",
+          "CSEMOTIONS/female003",
+          "CSEMOTIONS/male001",
+          "CSEMOTIONS/male002",
+          "CSEMOTIONS/male003"
+        ],
+        "label_counts": {
+          "angry": 441,
+          "fear": 357,
+          "happy": 369,
+          "neutral": 276,
+          "sad": 302,
+          "surprise": 320
+        },
+        "hours": 5.04
+      },
+      "val": {
+        "samples": 776,
+        "speakers": [
+          "CSEMOTIONS/female004",
+          "CSEMOTIONS/male004"
+        ],
+        "label_counts": {
+          "angry": 206,
+          "fear": 116,
+          "happy": 124,
+          "neutral": 100,
+          "sad": 108,
+          "surprise": 122
+        },
+        "hours": 1.63
+      },
+      "test": {
+        "samples": 698,
+        "speakers": [
+          "CSEMOTIONS/female005",
+          "CSEMOTIONS/male005"
+        ],
+        "label_counts": {
+          "angry": 122,
+          "fear": 150,
+          "happy": 110,
+          "neutral": 114,
+          "sad": 136,
+          "surprise": 66
+        },
+        "hours": 2.297
+      },
+      "speaker_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      }
+    },
+    "RAVDESS": {
+      "train": {
+        "samples": 703,
+        "speakers": [
+          "RAVDESS/01",
+          "RAVDESS/02",
+          "RAVDESS/03",
+          "RAVDESS/04",
+          "RAVDESS/05",
+          "RAVDESS/06",
+          "RAVDESS/07",
+          "RAVDESS/08",
+          "RAVDESS/09",
+          "RAVDESS/10",
+          "RAVDESS/11",
+          "RAVDESS/12",
+          "RAVDESS/13",
+          "RAVDESS/14",
+          "RAVDESS/15",
+          "RAVDESS/16"
+        ],
+        "label_counts": {
+          "neutral": 64,
+          "happy": 127,
+          "sad": 128,
+          "angry": 128,
+          "fear": 128,
+          "surprise": 128
+        },
+        "hours": 0.704
+      },
+      "val": {
+        "samples": 176,
+        "speakers": [
+          "RAVDESS/17",
+          "RAVDESS/18",
+          "RAVDESS/19",
+          "RAVDESS/20"
+        ],
+        "label_counts": {
+          "neutral": 16,
+          "happy": 32,
+          "sad": 32,
+          "angry": 32,
+          "fear": 32,
+          "surprise": 32
+        },
+        "hours": 0.18
+      },
+      "test": {
+        "samples": 176,
+        "speakers": [
+          "RAVDESS/21",
+          "RAVDESS/22",
+          "RAVDESS/23",
+          "RAVDESS/24"
+        ],
+        "label_counts": {
+          "neutral": 16,
+          "happy": 32,
+          "sad": 32,
+          "angry": 32,
+          "fear": 32,
+          "surprise": 32
+        },
+        "hours": 0.183
+      },
+      "speaker_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      }
+    },
+    "CREMA-D": {
+      "train": {
+        "samples": 2890,
+        "speakers": [
+          "CREMA-D/1001",
+          "CREMA-D/1002",
+          "CREMA-D/1003",
+          "CREMA-D/1004",
+          "CREMA-D/1005",
+          "CREMA-D/1006",
+          "CREMA-D/1007",
+          "CREMA-D/1008",
+          "CREMA-D/1009",
+          "CREMA-D/1010",
+          "CREMA-D/1011",
+          "CREMA-D/1012",
+          "CREMA-D/1013",
+          "CREMA-D/1014",
+          "CREMA-D/1015",
+          "CREMA-D/1016",
+          "CREMA-D/1017",
+          "CREMA-D/1018",
+          "CREMA-D/1019",
+          "CREMA-D/1020",
+          "CREMA-D/1021",
+          "CREMA-D/1022",
+          "CREMA-D/1023",
+          "CREMA-D/1024",
+          "CREMA-D/1025",
+          "CREMA-D/1026",
+          "CREMA-D/1027",
+          "CREMA-D/1028",
+          "CREMA-D/1029",
+          "CREMA-D/1030",
+          "CREMA-D/1031",
+          "CREMA-D/1032",
+          "CREMA-D/1033",
+          "CREMA-D/1034",
+          "CREMA-D/1035",
+          "CREMA-D/1036",
+          "CREMA-D/1037",
+          "CREMA-D/1038",
+          "CREMA-D/1039",
+          "CREMA-D/1040",
+          "CREMA-D/1041",
+          "CREMA-D/1042",
+          "CREMA-D/1043",
+          "CREMA-D/1044",
+          "CREMA-D/1045",
+          "CREMA-D/1046",
+          "CREMA-D/1047",
+          "CREMA-D/1048",
+          "CREMA-D/1049",
+          "CREMA-D/1050",
+          "CREMA-D/1051",
+          "CREMA-D/1052",
+          "CREMA-D/1053",
+          "CREMA-D/1054",
+          "CREMA-D/1055",
+          "CREMA-D/1056",
+          "CREMA-D/1057",
+          "CREMA-D/1058",
+          "CREMA-D/1059",
+          "CREMA-D/1060",
+          "CREMA-D/1061",
+          "CREMA-D/1062",
+          "CREMA-D/1063",
+          "CREMA-D/1064",
+          "CREMA-D/1065"
+        ],
+        "label_counts": {
+          "angry": 508,
+          "neutral": 1843,
+          "happy": 154,
+          "fear": 258,
+          "sad": 127
+        }
+      },
+      "val": {
+        "samples": 597,
+        "speakers": [
+          "CREMA-D/1066",
+          "CREMA-D/1067",
+          "CREMA-D/1068",
+          "CREMA-D/1069",
+          "CREMA-D/1070",
+          "CREMA-D/1071",
+          "CREMA-D/1072",
+          "CREMA-D/1073",
+          "CREMA-D/1074",
+          "CREMA-D/1075",
+          "CREMA-D/1076",
+          "CREMA-D/1077",
+          "CREMA-D/1078"
+        ],
+        "label_counts": {
+          "neutral": 427,
+          "angry": 96,
+          "fear": 38,
+          "sad": 8,
+          "happy": 28
+        }
+      },
+      "test": {
+        "samples": 562,
+        "speakers": [
+          "CREMA-D/1079",
+          "CREMA-D/1080",
+          "CREMA-D/1081",
+          "CREMA-D/1082",
+          "CREMA-D/1083",
+          "CREMA-D/1084",
+          "CREMA-D/1085",
+          "CREMA-D/1086",
+          "CREMA-D/1087",
+          "CREMA-D/1088",
+          "CREMA-D/1089",
+          "CREMA-D/1090",
+          "CREMA-D/1091"
+        ],
+        "label_counts": {
+          "angry": 80,
+          "neutral": 391,
+          "fear": 39,
+          "happy": 35,
+          "sad": 17
+        }
+      },
+      "speaker_overlap": {
+        "train_val": [],
+        "train_test": [],
+        "val_test": []
+      }
+    }
+  },
+  "excluded": {
+    "CSEMOTIONS/playfulness": 621,
+    "RAVDESS/unsupported_label_or_modality": 384,
+    "within_split_exact_duplicate": 1
+  },
+  "cross_split_exact_duplicates": 0,
+  "runtime": {
+    "executable": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Scripts\\python.exe",
+    "prefix": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser",
+    "base_prefix": "D:\\Anaconda\\envs\\cvhw",
+    "python": "3.11.14",
+    "isolated_packages": true,
+    "torch": "2.11.0.dev20260103+cu128",
+    "cuda_runtime": "12.8",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 5070 Ti",
+    "package_paths": {
+      "torch": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\torch\\__init__.py",
+      "numpy": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\numpy\\__init__.py",
+      "sklearn": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\sklearn\\__init__.py"
+    }
+  },
+  "license_note": "CSEMOTIONS card Apache-2.0; its NOTICE includes ESD research-only terms. RAVDESS CC-BY-NC-SA-4.0. Data and trained weights treated as research/noncommercial artifacts. CREMA-D ODbL-1.0/DbCL-1.0; audio-only human votes, attribution required.",
+  "crema_filter": "audio-only unique majority, >=6 raters, agreement>=0.6, five supported emotions",
+  "crema_excluded": {
+    "unsupported_tied_or_low_agreement": 3391,
+    "within_split_exact_duplicate": 1,
+    "unmatched_original_annotation": 1
+  }
+}

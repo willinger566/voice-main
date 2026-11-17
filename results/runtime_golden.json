@@ -1,0 +1,185 @@
+{
+  "model_signature": "64ab1f51ee3ba524a0d189a58485f165b188a53e546682a2a45af38a607af74f",
+  "samples": [
+    {
+      "path": "data/samples/liuchanhg_neutral_228.wav",
+      "expected": {
+        "id": "CASIA/liuchanhg_neutral_228.wav",
+        "dataset": "CASIA",
+        "label": 0,
+        "prediction": 0,
+        "confidence": 0.9201277902060585,
+        "uncertain": false,
+        "processing_ms": 85,
+        "probabilities": {
+          "neutral": 0.9201277902060585,
+          "happy": 0.012833790221782836,
+          "sad": 0.025752064969775765,
+          "angry": 0.01601208416397351,
+          "fear": 0.01353800540030095,
+          "surprise": 0.011736265038108413
+        }
+      }
+    },
+    {
+      "path": "data/samples/liuchanhg_happy_205.wav",
+      "expected": {
+        "id": "CASIA/liuchanhg_happy_205.wav",
+        "dataset": "CASIA",
+        "label": 1,
+        "prediction": 1,
+        "confidence": 0.9214378967462579,
+        "uncertain": false,
+        "processing_ms": 72,
+        "probabilities": {
+          "neutral": 0.020237558452038312,
+          "happy": 0.9214378967462579,
+          "sad": 0.01296455533862841,
+          "angry": 0.012498942411957915,
+          "fear": 0.013204032321006264,
+          "surprise": 0.019657014730111243
+        }
+      }
+    },
+    {
+      "path": "data/samples/liuchanhg_sad_217.wav",
+      "expected": {
+        "id": "CASIA/liuchanhg_sad_217.wav",
+        "dataset": "CASIA",
+        "label": 2,
+        "prediction": 2,
+        "confidence": 0.7443286065072483,
+        "uncertain": false,
+        "processing_ms": 85,
+        "probabilities": {
+          "neutral": 0.0244331422396343,
+          "happy": 0.010999405159410067,
+          "sad": 0.7443286065072483,
+          "angry": 0.014478968657850488,
+          "fear": 0.19516388794361075,
+          "surprise": 0.0105959894922462
+        }
+      }
+    },
+    {
+      "path": "data/samples/liuchanhg_angry_236.wav",
+      "expected": {
+        "id": "CASIA/liuchanhg_angry_236.wav",
+        "dataset": "CASIA",
+        "label": 3,
+        "prediction": 3,
+        "confidence": 0.9206809813057089,
+        "uncertain": false,
+        "processing_ms": 69,
+        "probabilities": {
+          "neutral": 0.02296384528761588,
+          "happy": 0.018030184603273103,
+          "sad": 0.011607526698661285,
+          "angry": 0.9206809813057089,
+          "fear": 0.014403135567723343,
+          "surprise": 0.012314326537017573
+        }
+      }
+    },
+    {
+      "path": "data/samples/liuchanhg_fear_207.wav",
+      "expected": {
+        "id": "CASIA/liuchanhg_fear_207.wav",
+        "dataset": "CASIA",
+        "label": 4,
+        "prediction": 2,
+        "confidence": 0.8519061966228504,
+        "uncertain": false,
+        "processing_ms": 74,
+        "probabilities": {
+          "neutral": 0.012865126442370386,
+          "happy": 0.008997274002659738,
+          "sad": 0.8519061966228504,
+          "angry": 0.014003163109871188,
+          "fear": 0.10434604703599026,
+          "surprise": 0.007882192786258124
+        }
+      }
+    },
+    {
+      "path": "data/samples/liuchanhg_surprise_233.wav",
+      "expected": {
+        "id": "CASIA/liuchanhg_surprise_233.wav",
+        "dataset": "CASIA",
+        "label": 5,
+        "prediction": 1,
+        "confidence": 0.7664915686440703,
+        "uncertain": false,
+        "processing_ms": 76,
+        "probabilities": {
+          "neutral": 0.015262759420926976,
+          "happy": 0.7664915686440703,
+          "sad": 0.013643753366839704,
+          "angry": 0.022227385271026533,
+          "fear": 0.01664114804262123,
+          "surprise": 0.16573338525451498
+        }
+      }
+    },
+    {
+      "path": "data/validation/CSEMOTIONS.wav",
+      "expected": {
+        "id": "CSEMOTIONS/01642",
+        "dataset": "CSEMOTIONS",
+        "label": 3,
+        "prediction": 3,
+        "confidence": 0.7131244466655153,
+        "uncertain": false,
+        "processing_ms": 301,
+        "probabilities": {
+          "neutral": 0.015013120072109705,
+          "happy": 0.014105057700891502,
+          "sad": 0.01358400913132415,
+          "angry": 0.7131244466655153,
+          "fear": 0.01637836565822215,
+          "surprise": 0.2277950007719371
+        }
+      }
+    },
+    {
+      "path": "data/validation/RAVDESS.wav",
+      "expected": {
+        "id": "RAVDESS/03-01-01-01-01-01-21",
+        "dataset": "RAVDESS",
+        "label": 0,
+        "prediction": 0,
+        "confidence": 0.9155217746413253,
+        "uncertain": false,
+        "processing_ms": 80,
+        "probabilities": {
+          "neutral": 0.9155217746413253,
+          "happy": 0.014452209596907658,
+          "sad": 0.026768698377246436,
+          "angry": 0.015555833628767954,
+          "fear": 0.015759416998762737,
+          "surprise": 0.011942066756989856
+        }
+      }
+    },
+    {
+      "path": "data/validation/CREMA-D.wav",
+      "expected": {
+        "id": "CREMA-D/1079_DFA_ANG_XX",
+        "dataset": "CREMA-D",
+        "label": 3,
+        "prediction": 3,
+        "confidence": 0.8812682619096569,
+        "uncertain": false,
+        "processing_ms": 65,
+        "probabilities": {
+          "neutral": 0.055325375727555685,
+          "happy": 0.020442767653764102,
+          "sad": 0.01090125599546156,
+          "angry": 0.8812682619096569,
+          "fear": 0.015573410612323941,
+          "surprise": 0.01648892810123781
+        }
+      }
+    }
+  ]
+}

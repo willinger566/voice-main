@@ -1,0 +1,16 @@
+{
+  "executable": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Scripts\\python.exe",
+  "prefix": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser",
+  "base_prefix": "D:\\Anaconda\\envs\\cvhw",
+  "stdlib": "D:\\Anaconda\\envs\\cvhw\\Lib\\os.py",
+  "user_site_enabled": false,
+  "pyvenv_cfg": "home = D:\\Anaconda\\envs\\cvhw\ninclude-system-site-packages = false\nversion = 3.11.14\nexecutable = D:\\Anaconda\\envs\\cvhw\\python.exe\ncommand = D:\\Anaconda\\envs\\cvhw\\python.exe -m venv D:\\s3\\s4\\voice\\voice-main\\.venv-ser\n",
+  "packages": {
+    "torch": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\torch\\__init__.py",
+    "numpy": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\numpy\\__init__.py",
+    "sklearn": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\sklearn\\__init__.py",
+    "funasr": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\funasr\\__init__.py",
+    "opensmile": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\opensmile\\__init__.py",
+    "fastapi": "D:\\s3\\s4\\voice\\voice-main\\.venv-ser\\Lib\\site-packages\\fastapi\\__init__.py"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "model_signature": "64ab1f51ee3ba524a0d189a58485f165b188a53e546682a2a45af38a607af74f",
+  "preprocessing_shared_within_request": true,
+  "backbones_remain_independent": true,
+  "samples": 180,
+  "accuracy_unchanged": true,
+  "predictions_identical": true,
+  "max_confidence_difference": 0.0,
+  "before_median_ms": 75.0,
+  "after_median_ms": 52.0,
+  "before_total_seconds": 15.38,
+  "after_total_seconds": 12.0
+}

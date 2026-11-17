@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "model_signature": "64ab1f51ee3ba524a0d189a58485f165b188a53e546682a2a45af38a607af74f",
+  "javascript_errors": [],
+  "recording_format": {
+    "riff": "RIFF",
+    "wave": "WAVE",
+    "sr": 16000,
+    "channels": 1
+  },
+  "checks": [
+    "desktop/mobile layout",
+    "sample inference",
+    "six probabilities",
+    "JSON export",
+    "session history",
+    "model facts",
+    "real WAV encoding",
+    "microphone inference",
+    "invalid input"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "source": "https://github.com/CheyneyComputerScience/CREMA-D",
+  "audio_mirror": "https://huggingface.co/datasets/cfahlgren1/crema-d",
+  "revision": "b7d5beded69285eb5eb6a1c6894a5b0ad17cab92",
+  "annotation_revision": "1658cd342dff90010aa843eaeebd53610a08b1dc",
+  "annotations_sha256": {
+    "processedResults/tabulatedVotes.csv": "774d9d759cb5caf2542758a39eca8c0f1d2777f9987ff5d5adf8066d192f377b",
+    "processedResults/summaryTable.csv": "fb0e382700d32c0d9adc0c6815292215a36bcf912f2657048862c91e3bd2b317",
+    "README.md": "bf3d3a070bf3dfb8eaceb0378fdb007388796bd24924e71fb17d0f65564136da",
+    "LICENSE.txt": "e76747a4efa4b338914bb3f930b5d3d3c3ac15b886bbabf897f6a19731f987f8"
+  },
+  "files": [
+    {
+      "type": "file",
+      "oid": "755583de323314a4c84a82d27fdb034fd7b0a257",
+      "size": 159698655,
+      "lfs": {
+        "oid": "81dad418a2fd01476db64d4a20ae05c7ddaf7012f96e32d86a8a54f87667c41e",
+        "size": 159698655,
+        "pointerSize": 134
+      },
+      "xetHash": "508c01d4b1e729acf4c76c56dff9761f8bef936313683f793ac587304bafbd08",
+      "path": "data/train-00000-of-00004.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "59055303ae296ca3797ea5b168d4bbe6b2ed554c",
+      "size": 148487378,
+      "lfs": {
+        "oid": "37b872cf04bd872f13ea97d5207ecf321b4e96e073378b3f16bc43635e7bf399",
+        "size": 148487378,
+        "pointerSize": 134
+      },
+      "xetHash": "1719dafba4e5cd206fd231695b3d7610906cdc1598b6befa7dc3c6af32090977",
+      "path": "data/train-00001-of-00004.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "9b56c51a540a177266012e8b4d025860c4a5923c",
+      "size": 146108080,
+      "lfs": {
+        "oid": "692d2946928ebe0f9c1b7856326c87a6c5d4a7ce742a2352955bde37a9c50819",
+        "size": 146108080,
+        "pointerSize": 134
+      },
+      "xetHash": "2c2fd0fccffcbf461b5401b63bf1b5a3fae27930c894167191c67fdd66600287",
+      "path": "data/train-00002-of-00004.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "55baeaf8feabed77e780388bab6044ce4a0d9929",
+      "size": 151556054,
+      "lfs": {
+        "oid": "38e6235e73dccefdee567b94bf148d49050ade9f2a9ed90b0f17be50c62ef226",
+        "size": 151556054,
+        "pointerSize": 134
+      },
+      "xetHash": "9e3057b9396744ff024a3965e97c585af668b4a1434d6cfd2b1fa04450581371",
+      "path": "data/train-00003-of-00004.parquet"
+    }
+  ],
+  "license": "ODbL-1.0 / DbCL-1.0"
+}

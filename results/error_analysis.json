@@ -1,0 +1,2742 @@
+{
+  "model_signature": "64ab1f51ee3ba524a0d189a58485f165b188a53e546682a2a45af38a607af74f",
+  "predictions_sha256": "e5fbad945e60ba2b67f0d1d3aa7ec9c09fe850a2b5304e3efb45710a5f9922bd",
+  "protocol": "Diagnostic only; existing regression/test predictions, no model selection, relabeling or threshold changes",
+  "corpora": {
+    "CASIA": {
+      "samples": 180,
+      "failures": 0,
+      "accuracy": 0.7722222222222223,
+      "uncertain_samples": 7,
+      "mean_confidence_correct": 0.8772437993562108,
+      "mean_confidence_wrong": 0.7629078481830656,
+      "confidence_ge_0_8_samples": 137,
+      "confidence_ge_0_8_errors": 18,
+      "ece_10_equal_width": 0.10114301972459475,
+      "reliability_bins": [
+        {
+          "range": [
+            0.4,
+            0.5
+          ],
+          "samples": 2,
+          "accuracy": 0.5,
+          "mean_confidence": 0.45098081094778153
+        },
+        {
+          "range": [
+            0.5,
+            0.6
+          ],
+          "samples": 9,
+          "accuracy": 0.3333333333333333,
+          "mean_confidence": 0.5429786611916154
+        },
+        {
+          "range": [
+            0.6,
+            0.7
+          ],
+          "samples": 9,
+          "accuracy": 0.5555555555555556,
+          "mean_confidence": 0.6619549653103008
+        },
+        {
+          "range": [
+            0.7,
+            0.8
+          ],
+          "samples": 23,
+          "accuracy": 0.4782608695652174,
+          "mean_confidence": 0.7463120738947144
+        },
+        {
+          "range": [
+            0.8,
+            0.9
+          ],
+          "samples": 34,
+          "accuracy": 0.6470588235294118,
+          "mean_confidence": 0.8588631288272747
+        },
+        {
+          "range": [
+            0.9,
+            1.0
+          ],
+          "samples": 103,
+          "accuracy": 0.941747572815534,
+          "mean_confidence": 0.9233322480184505
+        }
+      ],
+      "by_speaker": {
+        "CASIA/ZhaoZuoxiang": {
+          "samples": 45,
+          "failures": 0,
+          "accuracy": 0.9555555555555556,
+          "uncertain_samples": 2,
+          "mean_confidence_correct": 0.8842338326709103,
+          "mean_confidence_wrong": 0.6413143694346944,
+          "confidence_ge_0_8_samples": 37,
+          "confidence_ge_0_8_errors": 0,
+          "ece_10_equal_width": 0.08780378003904442,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 1,
+              "accuracy": 1.0,
+              "mean_confidence": 0.49997297378328703
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 2,
+              "accuracy": 0.5,
+              "mean_confidence": 0.5639634113688812
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 1,
+              "accuracy": 1.0,
+              "mean_confidence": 0.6866613056273883
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 4,
+              "accuracy": 0.75,
+              "mean_confidence": 0.743311949537219
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 4,
+              "accuracy": 1.0,
+              "mean_confidence": 0.8792413612738852
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 33,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9242396726765355
+            }
+          ]
+        },
+        "CASIA/liuchanhg": {
+          "samples": 45,
+          "failures": 0,
+          "accuracy": 0.6444444444444445,
+          "uncertain_samples": 1,
+          "mean_confidence_correct": 0.8993359829054199,
+          "mean_confidence_wrong": 0.7738764319267404,
+          "confidence_ge_0_8_samples": 34,
+          "confidence_ge_0_8_errors": 7,
+          "ece_10_equal_width": 0.21028369811300066,
+          "reliability_bins": [
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 2,
+              "accuracy": 0.0,
+              "mean_confidence": 0.5395592558163024
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 1,
+              "accuracy": 0.0,
+              "mean_confidence": 0.6940546674809639
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 8,
+              "accuracy": 0.25,
+              "mean_confidence": 0.7409931565319997
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 10,
+              "accuracy": 0.5,
+              "mean_confidence": 0.8567248596316249
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 24,
+              "accuracy": 0.9166666666666666,
+              "mean_confidence": 0.9247666411416339
+            }
+          ]
+        },
+        "CASIA/wangzhe": {
+          "samples": 45,
+          "failures": 0,
+          "accuracy": 0.6444444444444445,
+          "uncertain_samples": 3,
+          "mean_confidence_correct": 0.8519438113997958,
+          "mean_confidence_wrong": 0.7390613598219442,
+          "confidence_ge_0_8_samples": 30,
+          "confidence_ge_0_8_errors": 7,
+          "ece_10_equal_width": 0.1673633841721154,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 1,
+              "accuracy": 0.0,
+              "mean_confidence": 0.40198864811227597
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 4,
+              "accuracy": 0.25,
+              "mean_confidence": 0.5409289950581087
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 4,
+              "accuracy": 0.5,
+              "mean_confidence": 0.6525184098992654
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 6,
+              "accuracy": 0.5,
+              "mean_confidence": 0.7429825617179823
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 11,
+              "accuracy": 0.6363636363636364,
+              "mean_confidence": 0.8466615514185393
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 19,
+              "accuracy": 0.8421052631578947,
+              "mean_confidence": 0.9254948202048208
+            }
+          ]
+        },
+        "CASIA/zhaoquanyin": {
+          "samples": 45,
+          "failures": 0,
+          "accuracy": 0.8444444444444444,
+          "uncertain_samples": 1,
+          "mean_confidence_correct": 0.8717820860740237,
+          "mean_confidence_wrong": 0.8270840526653351,
+          "confidence_ge_0_8_samples": 36,
+          "confidence_ge_0_8_errors": 4,
+          "ece_10_equal_width": 0.09561292143298519,
+          "reliability_bins": [
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 1,
+              "accuracy": 1.0,
+              "mean_confidence": 0.5160466361217367
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 3,
+              "accuracy": 0.6666666666666666,
+              "mean_confidence": 0.6556016916957644
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 5,
+              "accuracy": 0.6,
+              "mean_confidence": 0.7612178557731328
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 9,
+              "accuracy": 0.6666666666666666,
+              "mean_confidence": 0.8670950303457359
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 27,
+              "accuracy": 0.9629629629629629,
+              "mean_confidence": 0.9194263472697749
+            }
+          ]
+        }
+      },
+      "by_duration": {
+        "0.5-2s": {
+          "samples": 161,
+          "failures": 0,
+          "accuracy": 0.7763975155279503,
+          "uncertain_samples": 6,
+          "mean_confidence_correct": 0.8757973067572739,
+          "mean_confidence_wrong": 0.7638396143780708,
+          "confidence_ge_0_8_samples": 122,
+          "confidence_ge_0_8_errors": 16,
+          "ece_10_equal_width": 0.09043723182057341,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 2,
+              "accuracy": 0.5,
+              "mean_confidence": 0.45098081094778153
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 8,
+              "accuracy": 0.375,
+              "mean_confidence": 0.5434309411637396
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 9,
+              "accuracy": 0.5555555555555556,
+              "mean_confidence": 0.6619549653103008
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 20,
+              "accuracy": 0.5,
+              "mean_confidence": 0.7494499819734974
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 28,
+              "accuracy": 0.6428571428571429,
+              "mean_confidence": 0.8561642870042314
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 94,
+              "accuracy": 0.9361702127659575,
+              "mean_confidence": 0.9234498505072678
+            }
+          ]
+        },
+        "2-5s": {
+          "samples": 19,
+          "failures": 0,
+          "accuracy": 0.7368421052631579,
+          "uncertain_samples": 1,
+          "mean_confidence_correct": 0.8901589118467195,
+          "mean_confidence_wrong": 0.7561991315790275,
+          "confidence_ge_0_8_samples": 15,
+          "confidence_ge_0_8_errors": 2,
+          "ece_10_equal_width": 0.19186048564814387,
+          "reliability_bins": [
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 1,
+              "accuracy": 0.0,
+              "mean_confidence": 0.5393604214146226
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 3,
+              "accuracy": 0.3333333333333333,
+              "mean_confidence": 0.7253926867028273
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 6,
+              "accuracy": 0.6666666666666666,
+              "mean_confidence": 0.8714577240014777
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 9,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9221039553574708
+            }
+          ]
+        }
+      },
+      "top_confusions": [
+        {
+          "actual": "sad",
+          "predicted": "fear",
+          "samples": 13
+        },
+        {
+          "actual": "fear",
+          "predicted": "sad",
+          "samples": 11
+        },
+        {
+          "actual": "surprise",
+          "predicted": "happy",
+          "samples": 4
+        },
+        {
+          "actual": "happy",
+          "predicted": "neutral",
+          "samples": 4
+        },
+        {
+          "actual": "happy",
+          "predicted": "angry",
+          "samples": 3
+        },
+        {
+          "actual": "fear",
+          "predicted": "neutral",
+          "samples": 2
+        },
+        {
+          "actual": "happy",
+          "predicted": "surprise",
+          "samples": 1
+        },
+        {
+          "actual": "surprise",
+          "predicted": "angry",
+          "samples": 1
+        }
+      ]
+    },
+    "CREMA-D": {
+      "samples": 562,
+      "failures": 0,
+      "accuracy": 0.8274021352313167,
+      "uncertain_samples": 89,
+      "mean_confidence_correct": 0.7882233170889277,
+      "mean_confidence_wrong": 0.6347055331263781,
+      "confidence_ge_0_8_samples": 305,
+      "confidence_ge_0_8_errors": 26,
+      "ece_10_equal_width": 0.08538517292615841,
+      "reliability_bins": [
+        {
+          "range": [
+            0.2,
+            0.3
+          ],
+          "samples": 1,
+          "accuracy": 0.0,
+          "mean_confidence": 0.282872964840321
+        },
+        {
+          "range": [
+            0.3,
+            0.4
+          ],
+          "samples": 4,
+          "accuracy": 0.25,
+          "mean_confidence": 0.382564957338926
+        },
+        {
+          "range": [
+            0.4,
+            0.5
+          ],
+          "samples": 50,
+          "accuracy": 0.48,
+          "mean_confidence": 0.4608932560577572
+        },
+        {
+          "range": [
+            0.5,
+            0.6
+          ],
+          "samples": 67,
+          "accuracy": 0.7611940298507462,
+          "mean_confidence": 0.5499445944228957
+        },
+        {
+          "range": [
+            0.6,
+            0.7
+          ],
+          "samples": 66,
+          "accuracy": 0.8333333333333334,
+          "mean_confidence": 0.6498965488405097
+        },
+        {
+          "range": [
+            0.7,
+            0.8
+          ],
+          "samples": 69,
+          "accuracy": 0.7971014492753623,
+          "mean_confidence": 0.7550218453844006
+        },
+        {
+          "range": [
+            0.8,
+            0.9
+          ],
+          "samples": 152,
+          "accuracy": 0.8289473684210527,
+          "mean_confidence": 0.8600344761701294
+        },
+        {
+          "range": [
+            0.9,
+            1.0
+          ],
+          "samples": 153,
+          "accuracy": 1.0,
+          "mean_confidence": 0.9194201032897745
+        }
+      ],
+      "by_speaker": {
+        "CREMA-D/1079": {
+          "samples": 47,
+          "failures": 0,
+          "accuracy": 0.8723404255319149,
+          "uncertain_samples": 7,
+          "mean_confidence_correct": 0.8127783017096074,
+          "mean_confidence_wrong": 0.5414719691955692,
+          "confidence_ge_0_8_samples": 30,
+          "confidence_ge_0_8_errors": 0,
+          "ece_10_equal_width": 0.2093935534050772,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 5,
+              "accuracy": 0.2,
+              "mean_confidence": 0.44735341401998063
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 4,
+              "accuracy": 1.0,
+              "mean_confidence": 0.5492553182963072
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 6,
+              "accuracy": 1.0,
+              "mean_confidence": 0.6446547971687356
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 2,
+              "accuracy": 0.0,
+              "mean_confidence": 0.735176263776536
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 14,
+              "accuracy": 1.0,
+              "mean_confidence": 0.8655640519730842
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 16,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9176734877370953
+            }
+          ]
+        },
+        "CREMA-D/1080": {
+          "samples": 42,
+          "failures": 0,
+          "accuracy": 0.9047619047619048,
+          "uncertain_samples": 6,
+          "mean_confidence_correct": 0.8108125934865665,
+          "mean_confidence_wrong": 0.8173729142032341,
+          "confidence_ge_0_8_samples": 30,
+          "confidence_ge_0_8_errors": 3,
+          "ece_10_equal_width": 0.16251249046598928,
+          "reliability_bins": [
+            {
+              "range": [
+                0.3,
+                0.4
+              ],
+              "samples": 1,
+              "accuracy": 1.0,
+              "mean_confidence": 0.36990351505976005
+            },
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 4,
+              "accuracy": 1.0,
+              "mean_confidence": 0.4734780809843503
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 1,
+              "accuracy": 1.0,
+              "mean_confidence": 0.5188216619600576
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 2,
+              "accuracy": 1.0,
+              "mean_confidence": 0.6478119287843558
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 4,
+              "accuracy": 0.75,
+              "mean_confidence": 0.7696027933036179
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 11,
+              "accuracy": 0.7272727272727273,
+              "mean_confidence": 0.8522305664747755
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 19,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9236400761231327
+            }
+          ]
+        },
+        "CREMA-D/1081": {
+          "samples": 39,
+          "failures": 0,
+          "accuracy": 0.8717948717948718,
+          "uncertain_samples": 5,
+          "mean_confidence_correct": 0.7907225058287073,
+          "mean_confidence_wrong": 0.6138483450487306,
+          "confidence_ge_0_8_samples": 18,
+          "confidence_ge_0_8_errors": 0,
+          "ece_10_equal_width": 0.1037485404251358,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 2,
+              "accuracy": 0.5,
+              "mean_confidence": 0.4262440687089272
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 5,
+              "accuracy": 0.8,
+              "mean_confidence": 0.5540009966164737
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 4,
+              "accuracy": 0.75,
+              "mean_confidence": 0.6637024564386872
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 10,
+              "accuracy": 0.8,
+              "mean_confidence": 0.7683922267569365
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 10,
+              "accuracy": 1.0,
+              "mean_confidence": 0.8680616228575591
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 8,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9139956851274721
+            }
+          ]
+        },
+        "CREMA-D/1082": {
+          "samples": 46,
+          "failures": 0,
+          "accuracy": 0.717391304347826,
+          "uncertain_samples": 9,
+          "mean_confidence_correct": 0.7607765838862413,
+          "mean_confidence_wrong": 0.7134032525699383,
+          "confidence_ge_0_8_samples": 25,
+          "confidence_ge_0_8_errors": 7,
+          "ece_10_equal_width": 0.21971131226317378,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 7,
+              "accuracy": 0.8571428571428571,
+              "mean_confidence": 0.4753402963633306
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 5,
+              "accuracy": 0.4,
+              "mean_confidence": 0.5516323538097412
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 5,
+              "accuracy": 0.8,
+              "mean_confidence": 0.6354815239511149
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 4,
+              "accuracy": 0.75,
+              "mean_confidence": 0.7467359962250648
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 14,
+              "accuracy": 0.5,
+              "mean_confidence": 0.8560809420594192
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 11,
+              "accuracy": 1.0,
+              "mean_confidence": 0.922258264961403
+            }
+          ]
+        },
+        "CREMA-D/1083": {
+          "samples": 39,
+          "failures": 0,
+          "accuracy": 0.7692307692307693,
+          "uncertain_samples": 8,
+          "mean_confidence_correct": 0.7414460985261541,
+          "mean_confidence_wrong": 0.6148868474597242,
+          "confidence_ge_0_8_samples": 16,
+          "confidence_ge_0_8_errors": 3,
+          "ece_10_equal_width": 0.17884280506502215,
+          "reliability_bins": [
+            {
+              "range": [
+                0.3,
+                0.4
+              ],
+              "samples": 1,
+              "accuracy": 0.0,
+              "mean_confidence": 0.3891105456488978
+            },
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 3,
+              "accuracy": 0.3333333333333333,
+              "mean_confidence": 0.45063568807784743
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 7,
+              "accuracy": 0.7142857142857143,
+              "mean_confidence": 0.5420006072931756
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 8,
+              "accuracy": 0.875,
+              "mean_confidence": 0.6530779824034332
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 4,
+              "accuracy": 1.0,
+              "mean_confidence": 0.7417838297865719
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 9,
+              "accuracy": 0.6666666666666666,
+              "mean_confidence": 0.8483443755940621
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 7,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9164977376095933
+            }
+          ]
+        },
+        "CREMA-D/1084": {
+          "samples": 44,
+          "failures": 0,
+          "accuracy": 0.7954545454545454,
+          "uncertain_samples": 12,
+          "mean_confidence_correct": 0.7397433421125907,
+          "mean_confidence_wrong": 0.5682836319826222,
+          "confidence_ge_0_8_samples": 17,
+          "confidence_ge_0_8_errors": 2,
+          "ece_10_equal_width": 0.19111924802741642,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 5,
+              "accuracy": 0.2,
+              "mean_confidence": 0.46404049757850074
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 11,
+              "accuracy": 0.8181818181818182,
+              "mean_confidence": 0.5406251661056098
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 6,
+              "accuracy": 0.8333333333333334,
+              "mean_confidence": 0.6457852012329873
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 5,
+              "accuracy": 1.0,
+              "mean_confidence": 0.7453806379866179
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 8,
+              "accuracy": 0.75,
+              "mean_confidence": 0.8609007249503496
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 9,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9166300166440285
+            }
+          ]
+        },
+        "CREMA-D/1085": {
+          "samples": 43,
+          "failures": 0,
+          "accuracy": 0.8604651162790697,
+          "uncertain_samples": 6,
+          "mean_confidence_correct": 0.7843061609481413,
+          "mean_confidence_wrong": 0.6221798823934976,
+          "confidence_ge_0_8_samples": 22,
+          "confidence_ge_0_8_errors": 1,
+          "ece_10_equal_width": 0.09878122675715771,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 4,
+              "accuracy": 0.5,
+              "mean_confidence": 0.47035211145277933
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 5,
+              "accuracy": 0.8,
+              "mean_confidence": 0.5559544051469073
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 8,
+              "accuracy": 0.75,
+              "mean_confidence": 0.6667328914649328
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 4,
+              "accuracy": 1.0,
+              "mean_confidence": 0.7443750337961339
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 8,
+              "accuracy": 0.875,
+              "mean_confidence": 0.863950767063907
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 14,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9191612410343794
+            }
+          ]
+        },
+        "CREMA-D/1086": {
+          "samples": 43,
+          "failures": 0,
+          "accuracy": 0.9069767441860465,
+          "uncertain_samples": 2,
+          "mean_confidence_correct": 0.82852479462124,
+          "mean_confidence_wrong": 0.6429631624499261,
+          "confidence_ge_0_8_samples": 30,
+          "confidence_ge_0_8_errors": 1,
+          "ece_10_equal_width": 0.12682653912694114,
+          "reliability_bins": [
+            {
+              "range": [
+                0.3,
+                0.4
+              ],
+              "samples": 1,
+              "accuracy": 0.0,
+              "mean_confidence": 0.379147269720545
+            },
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 1,
+              "accuracy": 1.0,
+              "mean_confidence": 0.4913107897447301
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 2,
+              "accuracy": 0.5,
+              "mean_confidence": 0.5748819628417186
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 5,
+              "accuracy": 1.0,
+              "mean_confidence": 0.6357489427818164
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 4,
+              "accuracy": 0.75,
+              "mean_confidence": 0.7850048039598203
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 16,
+              "accuracy": 0.9375,
+              "mean_confidence": 0.8543410620906879
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 14,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9197054808342839
+            }
+          ]
+        },
+        "CREMA-D/1087": {
+          "samples": 39,
+          "failures": 0,
+          "accuracy": 0.7435897435897436,
+          "uncertain_samples": 7,
+          "mean_confidence_correct": 0.7558523884466072,
+          "mean_confidence_wrong": 0.6070513742953418,
+          "confidence_ge_0_8_samples": 15,
+          "confidence_ge_0_8_errors": 1,
+          "ece_10_equal_width": 0.06416321101803459,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 6,
+              "accuracy": 0.3333333333333333,
+              "mean_confidence": 0.4577165198006978
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 4,
+              "accuracy": 0.75,
+              "mean_confidence": 0.5739369467748767
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 6,
+              "accuracy": 0.6666666666666666,
+              "mean_confidence": 0.6473019927381881
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 8,
+              "accuracy": 0.75,
+              "mean_confidence": 0.7417122275735677
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 12,
+              "accuracy": 0.9166666666666666,
+              "mean_confidence": 0.8650852145024449
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 3,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9165512503181071
+            }
+          ]
+        },
+        "CREMA-D/1088": {
+          "samples": 52,
+          "failures": 0,
+          "accuracy": 0.8653846153846154,
+          "uncertain_samples": 5,
+          "mean_confidence_correct": 0.7910789404659264,
+          "mean_confidence_wrong": 0.668911736443733,
+          "confidence_ge_0_8_samples": 28,
+          "confidence_ge_0_8_errors": 2,
+          "ece_10_equal_width": 0.09978237001888875,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 2,
+              "accuracy": 0.5,
+              "mean_confidence": 0.4868279423752574
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 9,
+              "accuracy": 0.7777777777777778,
+              "mean_confidence": 0.5601456909503653
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 5,
+              "accuracy": 0.8,
+              "mean_confidence": 0.6594098397828161
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 8,
+              "accuracy": 0.875,
+              "mean_confidence": 0.7524533188337942
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 12,
+              "accuracy": 0.8333333333333334,
+              "mean_confidence": 0.8529007382106261
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 16,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9196551727910663
+            }
+          ]
+        },
+        "CREMA-D/1089": {
+          "samples": 45,
+          "failures": 0,
+          "accuracy": 0.7555555555555555,
+          "uncertain_samples": 7,
+          "mean_confidence_correct": 0.850178696610276,
+          "mean_confidence_wrong": 0.6137835837440444,
+          "confidence_ge_0_8_samples": 29,
+          "confidence_ge_0_8_errors": 2,
+          "ece_10_equal_width": 0.08927436128533546,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 5,
+              "accuracy": 0.2,
+              "mean_confidence": 0.44484448299790724
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 3,
+              "accuracy": 0.3333333333333333,
+              "mean_confidence": 0.5462040418300348
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 3,
+              "accuracy": 0.6666666666666666,
+              "mean_confidence": 0.6550432651336798
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 5,
+              "accuracy": 0.6,
+              "mean_confidence": 0.7535787509632808
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 14,
+              "accuracy": 0.8571428571428571,
+              "mean_confidence": 0.8719137418993528
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 15,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9236696419097232
+            }
+          ]
+        },
+        "CREMA-D/1090": {
+          "samples": 43,
+          "failures": 0,
+          "accuracy": 0.8837209302325582,
+          "uncertain_samples": 6,
+          "mean_confidence_correct": 0.7532036468748099,
+          "mean_confidence_wrong": 0.8239703536343642,
+          "confidence_ge_0_8_samples": 22,
+          "confidence_ge_0_8_errors": 3,
+          "ece_10_equal_width": 0.20382434357399218,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 3,
+              "accuracy": 1.0,
+              "mean_confidence": 0.4686677315493901
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 5,
+              "accuracy": 1.0,
+              "mean_confidence": 0.541217214318458
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 6,
+              "accuracy": 1.0,
+              "mean_confidence": 0.6320287006219963
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 7,
+              "accuracy": 0.7142857142857143,
+              "mean_confidence": 0.7721774845226932
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 11,
+              "accuracy": 0.7272727272727273,
+              "mean_confidence": 0.8497978336262981
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 11,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9167554834449118
+            }
+          ]
+        },
+        "CREMA-D/1091": {
+          "samples": 40,
+          "failures": 0,
+          "accuracy": 0.8,
+          "uncertain_samples": 9,
+          "mean_confidence_correct": 0.8089556353250261,
+          "mean_confidence_wrong": 0.51584948575773,
+          "confidence_ge_0_8_samples": 23,
+          "confidence_ge_0_8_errors": 1,
+          "ece_10_equal_width": 0.16773416111013092,
+          "reliability_bins": [
+            {
+              "range": [
+                0.2,
+                0.3
+              ],
+              "samples": 1,
+              "accuracy": 0.0,
+              "mean_confidence": 0.282872964840321
+            },
+            {
+              "range": [
+                0.3,
+                0.4
+              ],
+              "samples": 1,
+              "accuracy": 0.0,
+              "mean_confidence": 0.3920984989265011
+            },
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 3,
+              "accuracy": 0.0,
+              "mean_confidence": 0.44636793200502883
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 6,
+              "accuracy": 0.8333333333333334,
+              "mean_confidence": 0.5416839844484257
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 2,
+              "accuracy": 0.5,
+              "mean_confidence": 0.6736480353260224
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 4,
+              "accuracy": 1.0,
+              "mean_confidence": 0.7347147501122802
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 13,
+              "accuracy": 0.9230769230769231,
+              "mean_confidence": 0.8687145925121406
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 10,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9169752276231214
+            }
+          ]
+        }
+      },
+      "by_duration": {
+        "2-5s": {
+          "samples": 500,
+          "failures": 0,
+          "accuracy": 0.826,
+          "uncertain_samples": 80,
+          "mean_confidence_correct": 0.7902188777430073,
+          "mean_confidence_wrong": 0.6298462825523984,
+          "confidence_ge_0_8_samples": 273,
+          "confidence_ge_0_8_errors": 22,
+          "ece_10_equal_width": 0.07832970940434382,
+          "reliability_bins": [
+            {
+              "range": [
+                0.2,
+                0.3
+              ],
+              "samples": 1,
+              "accuracy": 0.0,
+              "mean_confidence": 0.282872964840321
+            },
+            {
+              "range": [
+                0.3,
+                0.4
+              ],
+              "samples": 4,
+              "accuracy": 0.25,
+              "mean_confidence": 0.382564957338926
+            },
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 44,
+              "accuracy": 0.4772727272727273,
+              "mean_confidence": 0.4622285723724786
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 60,
+              "accuracy": 0.75,
+              "mean_confidence": 0.5480250667768858
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 56,
+              "accuracy": 0.8214285714285714,
+              "mean_confidence": 0.6502505423224444
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 62,
+              "accuracy": 0.7903225806451613,
+              "mean_confidence": 0.7552158007528955
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 137,
+              "accuracy": 0.8394160583941606,
+              "mean_confidence": 0.8602029642470836
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 136,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9194052425451174
+            }
+          ]
+        },
+        "0.5-2s": {
+          "samples": 62,
+          "failures": 0,
+          "accuracy": 0.8387096774193549,
+          "uncertain_samples": 9,
+          "mean_confidence_correct": 0.7723739603555622,
+          "mean_confidence_wrong": 0.6769810131200017,
+          "confidence_ge_0_8_samples": 32,
+          "confidence_ge_0_8_errors": 4,
+          "ece_10_equal_width": 0.14228407229563175,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 6,
+              "accuracy": 0.5,
+              "mean_confidence": 0.45110093641646615
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 7,
+              "accuracy": 0.8571428571428571,
+              "mean_confidence": 0.5663976885315514
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 10,
+              "accuracy": 0.9,
+              "mean_confidence": 0.6479141853416764
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 7,
+              "accuracy": 0.8571428571428571,
+              "mean_confidence": 0.7533039549777315
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 15,
+              "accuracy": 0.7333333333333333,
+              "mean_confidence": 0.858495618400614
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 17,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9195389892470294
+            }
+          ]
+        }
+      },
+      "top_confusions": [
+        {
+          "actual": "neutral",
+          "predicted": "happy",
+          "samples": 22
+        },
+        {
+          "actual": "neutral",
+          "predicted": "angry",
+          "samples": 14
+        },
+        {
+          "actual": "neutral",
+          "predicted": "sad",
+          "samples": 14
+        },
+        {
+          "actual": "neutral",
+          "predicted": "fear",
+          "samples": 13
+        },
+        {
+          "actual": "fear",
+          "predicted": "neutral",
+          "samples": 10
+        },
+        {
+          "actual": "sad",
+          "predicted": "neutral",
+          "samples": 5
+        },
+        {
+          "actual": "happy",
+          "predicted": "angry",
+          "samples": 5
+        },
+        {
+          "actual": "happy",
+          "predicted": "fear",
+          "samples": 4
+        }
+      ]
+    },
+    "CSEMOTIONS": {
+      "samples": 698,
+      "failures": 0,
+      "accuracy": 0.7206303724928367,
+      "uncertain_samples": 147,
+      "mean_confidence_correct": 0.781424917762529,
+      "mean_confidence_wrong": 0.5972553667535185,
+      "confidence_ge_0_8_samples": 325,
+      "confidence_ge_0_8_errors": 34,
+      "ece_10_equal_width": 0.03255747286662807,
+      "reliability_bins": [
+        {
+          "range": [
+            0.2,
+            0.3
+          ],
+          "samples": 3,
+          "accuracy": 0.0,
+          "mean_confidence": 0.24399460978118825
+        },
+        {
+          "range": [
+            0.3,
+            0.4
+          ],
+          "samples": 30,
+          "accuracy": 0.36666666666666664,
+          "mean_confidence": 0.3634201038528898
+        },
+        {
+          "range": [
+            0.4,
+            0.5
+          ],
+          "samples": 67,
+          "accuracy": 0.40298507462686567,
+          "mean_confidence": 0.4538133967599329
+        },
+        {
+          "range": [
+            0.5,
+            0.6
+          ],
+          "samples": 97,
+          "accuracy": 0.4845360824742268,
+          "mean_confidence": 0.5495943942175351
+        },
+        {
+          "range": [
+            0.6,
+            0.7
+          ],
+          "samples": 86,
+          "accuracy": 0.627906976744186,
+          "mean_confidence": 0.6513202402148476
+        },
+        {
+          "range": [
+            0.7,
+            0.8
+          ],
+          "samples": 90,
+          "accuracy": 0.8111111111111111,
+          "mean_confidence": 0.7532989281244039
+        },
+        {
+          "range": [
+            0.8,
+            0.9
+          ],
+          "samples": 141,
+          "accuracy": 0.8794326241134752,
+          "mean_confidence": 0.8595652510532474
+        },
+        {
+          "range": [
+            0.9,
+            1.0
+          ],
+          "samples": 184,
+          "accuracy": 0.907608695652174,
+          "mean_confidence": 0.9193567651976112
+        }
+      ],
+      "by_speaker": {
+        "CSEMOTIONS/female005": {
+          "samples": 349,
+          "failures": 0,
+          "accuracy": 0.6446991404011462,
+          "uncertain_samples": 91,
+          "mean_confidence_correct": 0.7933678541386675,
+          "mean_confidence_wrong": 0.5521987413884192,
+          "confidence_ge_0_8_samples": 153,
+          "confidence_ge_0_8_errors": 14,
+          "ece_10_equal_width": 0.09849238247519625,
+          "reliability_bins": [
+            {
+              "range": [
+                0.2,
+                0.3
+              ],
+              "samples": 3,
+              "accuracy": 0.0,
+              "mean_confidence": 0.24399460978118825
+            },
+            {
+              "range": [
+                0.3,
+                0.4
+              ],
+              "samples": 23,
+              "accuracy": 0.21739130434782608,
+              "mean_confidence": 0.3626009651730473
+            },
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 43,
+              "accuracy": 0.3023255813953488,
+              "mean_confidence": 0.45246860908089714
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 45,
+              "accuracy": 0.3111111111111111,
+              "mean_confidence": 0.5493873644152135
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 40,
+              "accuracy": 0.475,
+              "mean_confidence": 0.6481684670279249
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 42,
+              "accuracy": 0.8333333333333334,
+              "mean_confidence": 0.7576138968576553
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 74,
+              "accuracy": 0.8648648648648649,
+              "mean_confidence": 0.8594711966070364
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 79,
+              "accuracy": 0.9493670886075949,
+              "mean_confidence": 0.9162358556685838
+            }
+          ]
+        },
+        "CSEMOTIONS/male005": {
+          "samples": 349,
+          "failures": 0,
+          "accuracy": 0.7965616045845272,
+          "uncertain_samples": 56,
+          "mean_confidence_correct": 0.7717588721343589,
+          "mean_confidence_wrong": 0.6759458110531291,
+          "confidence_ge_0_8_samples": 172,
+          "confidence_ge_0_8_errors": 20,
+          "ece_10_equal_width": 0.07168167724630535,
+          "reliability_bins": [
+            {
+              "range": [
+                0.3,
+                0.4
+              ],
+              "samples": 7,
+              "accuracy": 0.8571428571428571,
+              "mean_confidence": 0.3661115595152295
+            },
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 24,
+              "accuracy": 0.5833333333333334,
+              "mean_confidence": 0.4562228080182054
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 52,
+              "accuracy": 0.6346153846153846,
+              "mean_confidence": 0.5497735546233903
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 46,
+              "accuracy": 0.7608695652173914,
+              "mean_confidence": 0.6540609125513015
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 48,
+              "accuracy": 0.7916666666666666,
+              "mean_confidence": 0.7495233304828086
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 67,
+              "accuracy": 0.8955223880597015,
+              "mean_confidence": 0.859669132083391
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 105,
+              "accuracy": 0.8761904761904762,
+              "mean_confidence": 0.921704878081355
+            }
+          ]
+        }
+      },
+      "by_duration": {
+        "5-10s": {
+          "samples": 379,
+          "failures": 0,
+          "accuracy": 0.6649076517150396,
+          "uncertain_samples": 80,
+          "mean_confidence_correct": 0.7888410674704087,
+          "mean_confidence_wrong": 0.6252364552165536,
+          "confidence_ge_0_8_samples": 178,
+          "confidence_ge_0_8_errors": 30,
+          "ece_10_equal_width": 0.07062718719858932,
+          "reliability_bins": [
+            {
+              "range": [
+                0.2,
+                0.3
+              ],
+              "samples": 2,
+              "accuracy": 0.0,
+              "mean_confidence": 0.2327016275946916
+            },
+            {
+              "range": [
+                0.3,
+                0.4
+              ],
+              "samples": 16,
+              "accuracy": 0.3125,
+              "mean_confidence": 0.3619030481336903
+            },
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 34,
+              "accuracy": 0.4117647058823529,
+              "mean_confidence": 0.45498126948233725
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 55,
+              "accuracy": 0.4,
+              "mean_confidence": 0.5471377168307897
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 44,
+              "accuracy": 0.5681818181818182,
+              "mean_confidence": 0.6396669267754299
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 50,
+              "accuracy": 0.76,
+              "mean_confidence": 0.7542527486677981
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 58,
+              "accuracy": 0.7586206896551724,
+              "mean_confidence": 0.8574531460537331
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 120,
+              "accuracy": 0.8666666666666667,
+              "mean_confidence": 0.9232077043249874
+            }
+          ]
+        },
+        "2-5s": {
+          "samples": 13,
+          "failures": 0,
+          "accuracy": 0.9230769230769231,
+          "uncertain_samples": 0,
+          "mean_confidence_correct": 0.8613071108402549,
+          "mean_confidence_wrong": 0.7626264173565658,
+          "confidence_ge_0_8_samples": 9,
+          "confidence_ge_0_8_errors": 0,
+          "ece_10_equal_width": 0.15217962215110462,
+          "reliability_bins": [
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 1,
+              "accuracy": 1.0,
+              "mean_confidence": 0.5617135709379872
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 1,
+              "accuracy": 1.0,
+              "mean_confidence": 0.6755420731052959
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 2,
+              "accuracy": 0.5,
+              "mean_confidence": 0.7691617088509964
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 1,
+              "accuracy": 1.0,
+              "mean_confidence": 0.8919056707143167
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 8,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9288533768725041
+            }
+          ]
+        },
+        "10-30s": {
+          "samples": 291,
+          "failures": 0,
+          "accuracy": 0.7869415807560137,
+          "uncertain_samples": 65,
+          "mean_confidence_correct": 0.7718337617362929,
+          "mean_confidence_wrong": 0.5368780471188304,
+          "confidence_ge_0_8_samples": 135,
+          "confidence_ge_0_8_errors": 4,
+          "ece_10_equal_width": 0.08141489027600143,
+          "reliability_bins": [
+            {
+              "range": [
+                0.2,
+                0.3
+              ],
+              "samples": 1,
+              "accuracy": 0.0,
+              "mean_confidence": 0.2665805741541815
+            },
+            {
+              "range": [
+                0.3,
+                0.4
+              ],
+              "samples": 14,
+              "accuracy": 0.42857142857142855,
+              "mean_confidence": 0.3651538818176893
+            },
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 31,
+              "accuracy": 0.3870967741935484,
+              "mean_confidence": 0.45475713356430153
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 39,
+              "accuracy": 0.5897435897435898,
+              "mean_confidence": 0.5512714613603455
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 37,
+              "accuracy": 0.7297297297297297,
+              "mean_confidence": 0.663450979713952
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 34,
+              "accuracy": 0.8823529411764706,
+              "mean_confidence": 0.7521975761884958
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 79,
+              "accuracy": 0.9620253164556962,
+              "mean_confidence": 0.8606617747294055
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 56,
+              "accuracy": 0.9821428571428571,
+              "mean_confidence": 0.9097480939711048
+            }
+          ]
+        },
+        "30-60s": {
+          "samples": 15,
+          "failures": 0,
+          "accuracy": 0.6666666666666666,
+          "uncertain_samples": 2,
+          "mean_confidence_correct": 0.7183167864315018,
+          "mean_confidence_wrong": 0.6021402731419473,
+          "confidence_ge_0_8_samples": 3,
+          "confidence_ge_0_8_errors": 0,
+          "ece_10_equal_width": 0.22730855896534263,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 2,
+              "accuracy": 0.5,
+              "mean_confidence": 0.41933164001134676
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 2,
+              "accuracy": 0.5,
+              "mean_confidence": 0.5783906247080021
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 4,
+              "accuracy": 0.25,
+              "mean_confidence": 0.6612418894591108
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 4,
+              "accuracy": 1.0,
+              "mean_confidence": 0.7428062724239011
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 3,
+              "accuracy": 1.0,
+              "mean_confidence": 0.86074401768467
+            }
+          ]
+        }
+      },
+      "top_confusions": [
+        {
+          "actual": "fear",
+          "predicted": "sad",
+          "samples": 38
+        },
+        {
+          "actual": "neutral",
+          "predicted": "happy",
+          "samples": 32
+        },
+        {
+          "actual": "fear",
+          "predicted": "surprise",
+          "samples": 27
+        },
+        {
+          "actual": "surprise",
+          "predicted": "angry",
+          "samples": 22
+        },
+        {
+          "actual": "happy",
+          "predicted": "surprise",
+          "samples": 19
+        },
+        {
+          "actual": "neutral",
+          "predicted": "sad",
+          "samples": 19
+        },
+        {
+          "actual": "angry",
+          "predicted": "surprise",
+          "samples": 12
+        },
+        {
+          "actual": "neutral",
+          "predicted": "fear",
+          "samples": 12
+        }
+      ]
+    },
+    "RAVDESS": {
+      "samples": 176,
+      "failures": 0,
+      "accuracy": 0.8181818181818182,
+      "uncertain_samples": 9,
+      "mean_confidence_correct": 0.8515066646386935,
+      "mean_confidence_wrong": 0.7347476893651269,
+      "confidence_ge_0_8_samples": 127,
+      "confidence_ge_0_8_errors": 16,
+      "ece_10_equal_width": 0.08528513975785101,
+      "reliability_bins": [
+        {
+          "range": [
+            0.3,
+            0.4
+          ],
+          "samples": 1,
+          "accuracy": 1.0,
+          "mean_confidence": 0.34194344381689057
+        },
+        {
+          "range": [
+            0.4,
+            0.5
+          ],
+          "samples": 4,
+          "accuracy": 0.0,
+          "mean_confidence": 0.45047993604788616
+        },
+        {
+          "range": [
+            0.5,
+            0.6
+          ],
+          "samples": 11,
+          "accuracy": 0.8181818181818182,
+          "mean_confidence": 0.5621301122332857
+        },
+        {
+          "range": [
+            0.6,
+            0.7
+          ],
+          "samples": 14,
+          "accuracy": 0.5,
+          "mean_confidence": 0.6517190763741535
+        },
+        {
+          "range": [
+            0.7,
+            0.8
+          ],
+          "samples": 19,
+          "accuracy": 0.8421052631578947,
+          "mean_confidence": 0.7555116939514168
+        },
+        {
+          "range": [
+            0.8,
+            0.9
+          ],
+          "samples": 45,
+          "accuracy": 0.7555555555555555,
+          "mean_confidence": 0.8587455193130924
+        },
+        {
+          "range": [
+            0.9,
+            1.0
+          ],
+          "samples": 82,
+          "accuracy": 0.9390243902439024,
+          "mean_confidence": 0.9229177283131356
+        }
+      ],
+      "by_speaker": {
+        "RAVDESS/21": {
+          "samples": 44,
+          "failures": 0,
+          "accuracy": 0.7272727272727273,
+          "uncertain_samples": 4,
+          "mean_confidence_correct": 0.8591555437841286,
+          "mean_confidence_wrong": 0.7343229977275026,
+          "confidence_ge_0_8_samples": 32,
+          "confidence_ge_0_8_errors": 6,
+          "ece_10_equal_width": 0.15746738292828175,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 3,
+              "accuracy": 0.0,
+              "mean_confidence": 0.444642770703964
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 2,
+              "accuracy": 1.0,
+              "mean_confidence": 0.545215145215683
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 4,
+              "accuracy": 0.75,
+              "mean_confidence": 0.6494284930143776
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 3,
+              "accuracy": 0.3333333333333333,
+              "mean_confidence": 0.734854951823516
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 7,
+              "accuracy": 0.7142857142857143,
+              "mean_confidence": 0.8561960319140516
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 25,
+              "accuracy": 0.84,
+              "mean_confidence": 0.9233937488140989
+            }
+          ]
+        },
+        "RAVDESS/22": {
+          "samples": 44,
+          "failures": 0,
+          "accuracy": 0.9318181818181818,
+          "uncertain_samples": 1,
+          "mean_confidence_correct": 0.8676193646746131,
+          "mean_confidence_wrong": 0.583524426701243,
+          "confidence_ge_0_8_samples": 32,
+          "confidence_ge_0_8_errors": 0,
+          "ece_10_equal_width": 0.16314043928283176,
+          "reliability_bins": [
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 1,
+              "accuracy": 0.0,
+              "mean_confidence": 0.46799143207965255
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 3,
+              "accuracy": 1.0,
+              "mean_confidence": 0.5886348881387561
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 2,
+              "accuracy": 0.0,
+              "mean_confidence": 0.6412909240120384
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 6,
+              "accuracy": 1.0,
+              "mean_confidence": 0.7585875431604981
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 6,
+              "accuracy": 1.0,
+              "mean_confidence": 0.885746363192545
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 26,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9207879172740233
+            }
+          ]
+        },
+        "RAVDESS/23": {
+          "samples": 44,
+          "failures": 0,
+          "accuracy": 0.7272727272727273,
+          "uncertain_samples": 1,
+          "mean_confidence_correct": 0.8099256316973591,
+          "mean_confidence_wrong": 0.7637177699297056,
+          "confidence_ge_0_8_samples": 28,
+          "confidence_ge_0_8_errors": 7,
+          "ece_10_equal_width": 0.1770482331921848,
+          "reliability_bins": [
+            {
+              "range": [
+                0.3,
+                0.4
+              ],
+              "samples": 1,
+              "accuracy": 1.0,
+              "mean_confidence": 0.34194344381689057
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 3,
+              "accuracy": 0.6666666666666666,
+              "mean_confidence": 0.5821461800884656
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 5,
+              "accuracy": 0.4,
+              "mean_confidence": 0.668635679330422
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 7,
+              "accuracy": 0.8571428571428571,
+              "mean_confidence": 0.7559278474171693
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 19,
+              "accuracy": 0.631578947368421,
+              "mean_confidence": 0.8469999715953651
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 9,
+              "accuracy": 1.0,
+              "mean_confidence": 0.918464297833938
+            }
+          ]
+        },
+        "RAVDESS/24": {
+          "samples": 44,
+          "failures": 0,
+          "accuracy": 0.8863636363636364,
+          "uncertain_samples": 3,
+          "mean_confidence_correct": 0.8624094395103884,
+          "mean_confidence_wrong": 0.7569727135387654,
+          "confidence_ge_0_8_samples": 35,
+          "confidence_ge_0_8_errors": 3,
+          "ece_10_equal_width": 0.046967393269278075,
+          "reliability_bins": [
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 3,
+              "accuracy": 0.6666666666666666,
+              "mean_confidence": 0.526885913151037
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 3,
+              "accuracy": 0.6666666666666666,
+              "mean_confidence": 0.633530950834818
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 3,
+              "accuracy": 1.0,
+              "mean_confidence": 0.769045712907732
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 13,
+              "accuracy": 0.8461538461538461,
+              "mean_confidence": 0.8648229620172002
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 22,
+              "accuracy": 0.9545454545454546,
+              "mean_confidence": 0.9267157032588458
+            }
+          ]
+        }
+      },
+      "by_duration": {
+        "2-5s": {
+          "samples": 175,
+          "failures": 0,
+          "accuracy": 0.8171428571428572,
+          "uncertain_samples": 9,
+          "mean_confidence_correct": 0.8509131686283918,
+          "mean_confidence_wrong": 0.7347476893651269,
+          "confidence_ge_0_8_samples": 126,
+          "confidence_ge_0_8_errors": 16,
+          "ece_10_equal_width": 0.08540892109424922,
+          "reliability_bins": [
+            {
+              "range": [
+                0.3,
+                0.4
+              ],
+              "samples": 1,
+              "accuracy": 1.0,
+              "mean_confidence": 0.34194344381689057
+            },
+            {
+              "range": [
+                0.4,
+                0.5
+              ],
+              "samples": 4,
+              "accuracy": 0.0,
+              "mean_confidence": 0.45047993604788616
+            },
+            {
+              "range": [
+                0.5,
+                0.6
+              ],
+              "samples": 11,
+              "accuracy": 0.8181818181818182,
+              "mean_confidence": 0.5621301122332857
+            },
+            {
+              "range": [
+                0.6,
+                0.7
+              ],
+              "samples": 14,
+              "accuracy": 0.5,
+              "mean_confidence": 0.6517190763741535
+            },
+            {
+              "range": [
+                0.7,
+                0.8
+              ],
+              "samples": 19,
+              "accuracy": 0.8421052631578947,
+              "mean_confidence": 0.7555116939514168
+            },
+            {
+              "range": [
+                0.8,
+                0.9
+              ],
+              "samples": 45,
+              "accuracy": 0.7555555555555555,
+              "mean_confidence": 0.8587455193130924
+            },
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 81,
+              "accuracy": 0.9382716049382716,
+              "mean_confidence": 0.9227515694761146
+            }
+          ]
+        },
+        "5-10s": {
+          "samples": 1,
+          "failures": 0,
+          "accuracy": 1.0,
+          "uncertain_samples": 0,
+          "mean_confidence_correct": 0.9363765941118338,
+          "mean_confidence_wrong": null,
+          "confidence_ge_0_8_samples": 1,
+          "confidence_ge_0_8_errors": 0,
+          "ece_10_equal_width": 0.06362340588816617,
+          "reliability_bins": [
+            {
+              "range": [
+                0.9,
+                1.0
+              ],
+              "samples": 1,
+              "accuracy": 1.0,
+              "mean_confidence": 0.9363765941118338
+            }
+          ]
+        }
+      },
+      "top_confusions": [
+        {
+          "actual": "happy",
+          "predicted": "neutral",
+          "samples": 7
+        },
+        {
+          "actual": "fear",
+          "predicted": "sad",
+          "samples": 6
+        },
+        {
+          "actual": "happy",
+          "predicted": "surprise",
+          "samples": 5
+        },
+        {
+          "actual": "fear",
+          "predicted": "happy",
+          "samples": 4
+        },
+        {
+          "actual": "sad",
+          "predicted": "neutral",
+          "samples": 3
+        },
+        {
+          "actual": "sad",
+          "predicted": "happy",
+          "samples": 2
+        },
+        {
+          "actual": "angry",
+          "predicted": "surprise",
+          "samples": 2
+        },
+        {
+          "actual": "fear",
+          "predicted": "neutral",
+          "samples": 1
+        }
+      ]
+    }
+  }
+}

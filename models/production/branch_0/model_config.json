@@ -1,0 +1,78 @@
+{
+  "schema_version": 3,
+  "architecture": "fusion_v1",
+  "input_dim": 4287,
+  "num_classes": 6,
+  "class_names": [
+    "neutral",
+    "happy",
+    "sad",
+    "angry",
+    "fear",
+    "surprise"
+  ],
+  "feature_spec": {
+    "name": "mean_std_acoustic_v1",
+    "embedding_dim": 1024,
+    "acoustic_dim": 191,
+    "input_dim": 4287,
+    "sample_rate": 16000,
+    "egemaps": true,
+    "egemaps_version": "eGeMAPSv02",
+    "intermediate_layer": 5,
+    "intermediate_dim": 2048
+  },
+  "emotion2vec_model": "iic/emotion2vec_plus_large",
+  "members": [
+    {
+      "checkpoint": "member_0.pth",
+      "hidden_dim": 256,
+      "dropout": 0.3,
+      "seed": 17
+    },
+    {
+      "checkpoint": "member_1.pth",
+      "hidden_dim": 256,
+      "dropout": 0.3,
+      "seed": 42
+    }
+  ],
+  "scaler": "scaler.pkl",
+  "temperature": 0.962980668555328,
+  "display_name": "emotion2vec+ \u00b7 temporal & prosody fusion",
+  "training_datasets": [
+    "CASIA",
+    "CSEMOTIONS",
+    "RAVDESS",
+    "CREMA-D"
+  ],
+  "augmentation": true,
+  "split_protocol": "CASIA legacy target split; external speaker-disjoint partitions",
+  "validation": {
+    "CASIA": {
+      "samples": 180,
+      "accuracy": 0.8277777777777777,
+      "macro_f1": 0.8245658874817106,
+      "nll": 0.5017474618684593
+    },
+    "CSEMOTIONS": {
+      "samples": 776,
+      "accuracy": 0.7899484536082474,
+      "macro_f1": 0.7590985042579635,
+      "nll": 0.5191343073634754
+    },
+    "RAVDESS": {
+      "samples": 176,
+      "accuracy": 0.7556818181818182,
+      "macro_f1": 0.7515567238613378,
+      "nll": 0.7202813011258967
+    },
+    "CREMA-D": {
+      "samples": 597,
+      "accuracy": 0.8023450586264657,
+      "macro_f1": 0.6414739211589024,
+      "nll": 0.5233592037904953
+    }
+  },
+  "backbone_sha256": "be501a01f26fcdc7663a062dff86af839afbaef7c4de32f5e42d7e1ad2784da4"
+}

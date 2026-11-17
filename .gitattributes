@@ -1,0 +1,2 @@
+models/production/**/*.pth filter=lfs diff=lfs merge=lfs -text
+models/production/**/*.pkl filter=lfs diff=lfs merge=lfs -text

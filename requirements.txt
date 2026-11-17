@@ -1,0 +1,21 @@
+# Python 3.11 recommended. Install matching torch/torchaudio builds for your CPU/CUDA.
+torch>=2.2,<3
+torchaudio>=2.2,<3
+numpy==1.26.4
+scipy==1.13.1
+funasr==1.4.24
+modelscope>=1.20,<2
+librosa==0.11.0
+soundfile>=0.12,<1
+pandas>=2.1,<3
+scikit-learn==1.7.2
+joblib>=1.3,<2
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+python-multipart>=0.0.18,<1
+anyio>=4,<5
+tqdm>=4.65,<5
+requests>=2.31,<3
+transformers==4.57.3
+huggingface-hub==0.36.0
+opensmile==2.6.0
